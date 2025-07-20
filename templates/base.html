@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="{{ base_path }}static/css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/index.html"><h1>我的極簡博客</h1></a>
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="搜索...">
-                <ul id="search-results"></ul>
-            </div>
+            <a href="{{ base_path }}index.html"><h1>我的極簡博客</h1></a>
         </nav>
     </header>
     <main>
         {{ content }}
     </main>
     <footer>
-        <p>&copy; 2025 你的名字</p>
+        <p>&copy; 2025 co2sou</p>
     </footer>
-    <script src="/static/js/lunr.min.js"></script>
-    <script src="/static/js/search.js"></script>
+
 </body>
 </html>
