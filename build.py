@@ -47,29 +47,63 @@ def main():
         if filename.endswith('.txt'):
             filepath = os.path.join(CONTENT_DIR, filename)
             content_raw = read_file(filepath)
-            
-            # Simple content format: first line is title, rest is body
+
+            # Get file modification time for sorting
+            file_mtime = os.path.getmtime(filepath)
+            file_datetime = datetime.fromtimestamp(file_mtime)
+
+            # Process and modify the txt file content
             lines = content_raw.strip().split('\n')
-            title = lines[0]
-            body = '\n'.join(lines[1:]).strip()
-            
+            modified_lines = []
+            title = 'Untitled'
+            content_modified = False
+
+            for line in lines:
+                if line.strip().startswith('title:'):
+                    # Remove "title: " prefix and use the rest as title
+                    title_content = line.strip()[6:].strip()  # Remove "title:" and whitespace
+                    if title_content:
+                        title = title_content
+                        modified_lines.append(title_content)  # Add title without prefix
+                        content_modified = True
+                    else:
+                        content_modified = True  # Still modified even if empty
+                elif line.strip().startswith('date:'):
+                    # Skip date lines entirely
+                    content_modified = True
+                else:
+                    modified_lines.append(line)
+
+            # Write back the modified content to the txt file if changes were made
+            if content_modified:
+                modified_content = '\n'.join(modified_lines)
+                write_file(filepath, modified_content)
+                print(f"Modified {filename}: removed metadata prefixes")
+
+            # Use first line as title if we have content
+            if modified_lines and modified_lines[0].strip():
+                title = modified_lines[0].strip()
+                body = '\n'.join(modified_lines[1:]).strip()
+            else:
+                body = '\n'.join(modified_lines).strip()
+
             # Prepare metadata
             post_slug = os.path.splitext(filename)[0]
             post_path = f'posts/{post_slug}.html' # Use relative path without leading ./
-            post_date = datetime.fromtimestamp(os.path.getmtime(filepath)).strftime('%Y-%m-%d')
 
             post_info = {
                 'title': title,
                 'path': post_path,
-                'date': post_date,
+                'file_datetime': file_datetime,  # Use file modification time for sorting
+                'date': file_datetime.strftime('%Y-%m-%d %H:%M:%S'),  # Display format with time
                 'content': body
             }
             posts_metadata.append(post_info)
 
 
 
-    # Sort posts by date, newest first
-    posts_metadata.sort(key=lambda p: p['date'], reverse=True)
+    # Sort posts by file modification time, newest first
+    posts_metadata.sort(key=lambda p: p['file_datetime'], reverse=True)
 
     # --- Generate Individual Post Pages ---
     for post in posts_metadata:
