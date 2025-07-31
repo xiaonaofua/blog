@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的新日記</title>
+    <title>寫日志</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
@@ -13,10 +13,24 @@
         </nav>
     </header>
     <main>
-        <h1>我的新日記</h1>
-<div class="post-meta">發佈於 2025-07-30 22:11:24</div>
+        <h1>寫日志</h1>
+<div class="post-meta">發佈於 2025-07-31 23:18:00</div>
 <div class="post-content">
-    這是一個演示如何發布新日記的示例。
+    ---
+第一行：標題
+第二行：空白
+第三行：內容
+文章檔案應保存為 `.txt` 格式，並放置在 `content/` 目錄中。
+
+---
+python build.py
+
+git status
+git add .
+git commit -m "新增文章: 我的新文章"
+git push origin main
+
+https://co2sou.github.io/blog
 </div>
 
     </main>
