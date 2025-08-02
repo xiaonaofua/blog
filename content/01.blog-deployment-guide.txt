@@ -11,7 +11,7 @@ python build.py
 
 git status
 git add .
-git commit -m "新增文章: 我的新文章"
+git commit -m "new txt"
 git push origin main
 
 https://co2sou.github.io/blog
