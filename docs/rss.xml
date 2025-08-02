@@ -5,9 +5,9 @@
         <link>https://co2sou.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 02 Aug 2025 18:34:39 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 02 Aug 2025 20:21:05 +0000</lastBuildDate>
         <item>
-            <title>claude pro</title>
+            <title>關於Claude Code | Claude Pro 第一天</title>
             <link>https://co2sou.github.io/blog/posts/03.claude-pro.html</link>
             <description>今天訂閲了claude pro。花費是20美元一個月，約3千日元。試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。&lt;br&gt;
 在第一次執行每一步任務的時候，比如執行Python指令和git指令都會確認是否執行。很有安心感。&lt;br&gt;
@@ -15,11 +15,11 @@
 另外也能通過對話讓claude code克隆OSS代碼，解釋如何使用OSS代碼。&lt;br&gt;
 &lt;br&gt;
 --...</description>
-            <pubDate>Sat, 02 Aug 2025 18:33:56 +0000</pubDate>
+            <pubDate>Sat, 02 Aug 2025 20:19:49 +0000</pubDate>
             <guid>https://co2sou.github.io/blog/posts/03.claude-pro.html</guid>
         </item>
 <item>
-            <title>寫新日志&amp;發佈</title>
+            <title>寫新日志&amp;發佈的方法</title>
             <link>https://co2sou.github.io/blog/posts/01.blog-deployment-guide.html</link>
             <description>第一行：標題，第二行：空白，第三行：內容&lt;br&gt;
 &lt;br&gt;
@@ -28,7 +28,7 @@ python build.py&lt;br&gt;
 git add .&lt;br&gt;
 git commit -m "new update"&lt;br&gt;
 git push origin main...</description>
-            <pubDate>Sat, 02 Aug 2025 17:41:53 +0000</pubDate>
+            <pubDate>Sat, 02 Aug 2025 20:18:32 +0000</pubDate>
             <guid>https://co2sou.github.io/blog/posts/01.blog-deployment-guide.html</guid>
         </item>
 <item>
