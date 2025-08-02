@@ -1,3 +1,0 @@
-markdown 
-
->npx ccusage blocks --live

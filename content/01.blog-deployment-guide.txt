@@ -1,18 +1,12 @@
 寫日志
 
----
 第一行：標題
 第二行：空白
 第三行：內容
-文章檔案應保存為 `.txt` 格式，並放置在 `content/` 目錄中。
+文章檔案應保存為 `.txt`或`.md` 格式，並放置在 `content/` 目錄中。
 
 ---
 python build.py
-
-git status
 git add .
-git commit -m "new txt"
+git commit -m "new update"
 git push origin main
-
-https://co2sou.github.io/blog
-
