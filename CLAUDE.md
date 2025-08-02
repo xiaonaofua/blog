@@ -60,4 +60,4 @@ Simple string replacement templating:
 
 ### Deployment
 
-Site is deployed to GitHub Pages from the `docs/` directory. Live URL: https://co2sou.github.io/blog
+Site is deployed to GitHub Pages from the `docs/` directory. Live URL: https://xiaonaofua.github.io/blog
