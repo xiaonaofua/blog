@@ -5,21 +5,18 @@
         <link>https://co2sou.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 02 Aug 2025 17:35:02 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 02 Aug 2025 17:42:08 +0000</lastBuildDate>
         <item>
-            <title>寫日志</title>
+            <title>寫新日志&amp;發佈</title>
             <link>https://co2sou.github.io/blog/posts/01.blog-deployment-guide.html</link>
-            <description>第一行：標題&lt;br&gt;
-第二行：空白&lt;br&gt;
-第三行：內容&lt;br&gt;
-文章檔案應保存為 `.txt`或`.md` 格式，並放置在 `content/` 目錄中。&lt;br&gt;
+            <description>第一行：標題，第二行：空白，第三行：內容&lt;br&gt;
 &lt;br&gt;
 ---&lt;br&gt;
 python build.py&lt;br&gt;
 git add .&lt;br&gt;
 git commit -m "new update"&lt;br&gt;
 git push origin main...</description>
-            <pubDate>Sat, 02 Aug 2025 17:34:54 +0000</pubDate>
+            <pubDate>Sat, 02 Aug 2025 17:41:53 +0000</pubDate>
             <guid>https://co2sou.github.io/blog/posts/01.blog-deployment-guide.html</guid>
         </item>
 <item>
