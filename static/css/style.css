@@ -236,6 +236,7 @@ footer {
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 1000;
 }
 
 .dropdown-toggle {
@@ -249,15 +250,25 @@ footer {
     align-items: center;
     gap: 5px;
     transition: color 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .dropdown-toggle:hover {
     color: #888;
 }
 
+.dropdown-toggle:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
 .dropdown-arrow {
     font-size: 0.8rem;
     transition: transform 0.3s ease;
+    pointer-events: none;
 }
 
 .dropdown.show .dropdown-arrow {
@@ -280,13 +291,16 @@ footer {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 1001;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .dropdown.show .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    max-height: 300px;
 }
 
 .dropdown-menu li {
@@ -304,10 +318,29 @@ footer {
     color: #333;
     font-size: 0.9rem;
     transition: background-color 0.2s ease;
+    white-space: nowrap;
 }
 
 .dropdown-menu a:hover {
     background-color: #f9f9f9;
     color: #888;
+}
+
+.dropdown-menu a:focus {
+    outline: 2px solid #007acc;
+    outline-offset: -2px;
+}
+
+/* 确保下拉菜单在移动设备上也能正常工作 */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        right: auto;
+        left: 0;
+        min-width: 180px;
+    }
+    
+    .dropdown-toggle {
+        padding: 10px 12px;
+    }
 }
 
