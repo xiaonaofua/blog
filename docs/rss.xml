@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>我的極簡博客</title>
+        <link>https://co2sou.github.io/blog</link>
+        <description>Simple and elegant blog</description>
+        <language>zh-CN</language>
+        <lastBuildDate>Sat, 02 Aug 2025 15:15:42 +0000</lastBuildDate>
+        <item>
+            <title>test</title>
+            <link>https://co2sou.github.io/blog/posts/03.1.txt.html</link>
+            <description>--test...</description>
+            <pubDate>Sat, 02 Aug 2025 15:10:32 +0000</pubDate>
+            <guid>https://co2sou.github.io/blog/posts/03.1.txt.html</guid>
+        </item>
+<item>
+            <title>markdown</title>
+            <link>https://co2sou.github.io/blog/posts/03.2.md.html</link>
+            <description>&gt;npx ccusage blocks --live...</description>
+            <pubDate>Sat, 02 Aug 2025 15:10:21 +0000</pubDate>
+            <guid>https://co2sou.github.io/blog/posts/03.2.md.html</guid>
+        </item>
+<item>
+            <title>claude pro</title>
+            <link>https://co2sou.github.io/blog/posts/03.0.claude-pro.html</link>
+            <description>今天訂閲了claude pro。花費是20美元一個月，約3千日元。&lt;br&gt;
+試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。&lt;br&gt;
+在第一次執行每一步任務的時候，比如執行Python指令和git指令都會確認是否執行。很有安心感。&lt;br&gt;
+---&lt;br&gt;
+● Update Todos&lt;br&gt;
+  ⎿  ☒ Explore codebase s...</description>
+            <pubDate>Sat, 02 Aug 2025 14:50:16 +0000</pubDate>
+            <guid>https://co2sou.github.io/blog/posts/03.0.claude-pro.html</guid>
+        </item>
+<item>
+            <title>寫日志</title>
+            <link>https://co2sou.github.io/blog/posts/01.blog-deployment-guide.html</link>
+            <description>---&lt;br&gt;
+第一行：標題&lt;br&gt;
+第二行：空白&lt;br&gt;
+第三行：內容&lt;br&gt;
+文章檔案應保存為 `.txt` 格式，並放置在 `content/` 目錄中。&lt;br&gt;
+&lt;br&gt;
+---&lt;br&gt;
+python build.py&lt;br&gt;
+&lt;br&gt;
+git status&lt;br&gt;
+git add .&lt;br&gt;
+git commit -m "new txt"&lt;br&gt;
+git push origin main...</description>
+            <pubDate>Thu, 31 Jul 2025 23:22:31 +0000</pubDate>
+            <guid>https://co2sou.github.io/blog/posts/01.blog-deployment-guide.html</guid>
+        </item>
+<item>
+            <title>關於Claude Code</title>
+            <link>https://co2sou.github.io/blog/posts/02.claude-code.html</link>
+            <description>計劃明天開始 用Claude Code編程一段時間試試。&lt;br&gt;
+每天編程1小時，在這裏寫感想...</description>
+            <pubDate>Thu, 31 Jul 2025 23:20:19 +0000</pubDate>
+            <guid>https://co2sou.github.io/blog/posts/02.claude-code.html</guid>
+        </item>
+
+    </channel>
+</rss>
