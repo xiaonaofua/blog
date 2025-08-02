@@ -14,11 +14,13 @@
     </header>
     <main>
         <h1>claude pro</h1>
-<div class="post-meta">發佈於 2025-08-02 14:50:16</div>
+<div class="post-meta">發佈於 2025-08-02 18:33:56</div>
 <div class="post-content">
-    今天訂閲了claude pro。花費是20美元一個月，約3千日元。<br>
-試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。<br>
+    今天訂閲了claude pro。花費是20美元一個月，約3千日元。試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。<br>
 在第一次執行每一步任務的時候，比如執行Python指令和git指令都會確認是否執行。很有安心感。<br>
+<br>
+另外也能通過對話讓claude code克隆OSS代碼，解釋如何使用OSS代碼。<br>
+<br>
 ---<br>
 ● Update Todos<br>
   ⎿  ☒ Explore codebase structure and identify key files<br>
@@ -100,7 +102,137 @@
   3. 提交更改（包括新的 claude-pro.txt 文章和 CLAUDE.md 文檔）<br>
   4. 推送到 GitHub 倉庫<br>
 <br>
-  網站已更新至 https://co2sou.github.io/blog
+  網站已更新至 https://co2sou.github.io/blog<br>
+<br>
+---<br>
+已成功克隆 Context-Engineering 項目！這是一個先進的 LLM 上下文工程框架，遠超基本提示工程。       <br>
+<br>
+  核心能力<br>
+<br>
+  Context-Engineering 提供系統化方法來設計、編排和優化 LLM<br>
+  的完整上下文窗口，而非僅限於單一提示。<br>
+<br>
+  可開發的軟件類型<br>
+<br>
+  基於此 OSS，你可以構建：<br>
+<br>
+  1. 智能對話系統 - 具有持久記憶和上下文感知的聊天機器人<br>
+  2. 知識檢索系統 - RAG 增強的問答應用<br>
+  3. 多代理協作平台 - 多個 AI 代理協同工作的系統<br>
+  4. 認知工具包 - 結構化推理和問題解決工具<br>
+  5. 代碼助手 - 上下文感知的編程輔助工具<br>
+<br>
+  快速開始路徑<br>
+<br>
+  1. 理論基礎: 00_foundations/01_atoms_prompting.md (5分鐘)<br>
+  2. 實戰教程: 10_guides_zero_to_hero/01_min_prompt.py<br>
+  3. 使用模板: 20_templates/minimal_context.yaml  <br>
+  4. 參考實例: 30_examples/00_toy_chatbot/<br>
+<br>
+  架構層次<br>
+<br>
+  atoms → molecules → cells → organs → neural systems → field theory<br>
+  提示   →  樣本    → 記憶  → 應用  →   認知工具    →   場論<br>
+<br>
+  你想基於這個框架開發什麼類型的軟件？我可以幫你設計具體的實現方案。<br>
+---<br>
+ 開始時建議從 已有項目的漸進式集成 入手，先添加 CLAUDE.md<br>
+ 和基礎模板，然後逐步替換現有的 AI<br>
+ 交互邏輯。新項目則可以直接採用完整的上下文工程架構，從 Level 1<br>
+ 基礎應用開始構建。<br>
+ <br>
+---老項目<br>
+  步驟 1: 添加 CLAUDE.md<br>
+  # 將框架的 CLAUDE.md 複制到項目根目錄<br>
+  cp Context-Engineering/CLAUDE.md ./CLAUDE.md<br>
+<br>
+  步驟 2: 創建上下文配置<br>
+  # 基於 minimal_context.yaml 創建項目專用配置<br>
+  cp Context-Engineering/20_templates/minimal_context.yaml<br>
+  ./context_config.yaml<br>
+<br>
+  步驟 3: 集成到現有工作流<br>
+  # 在現有 AI 交互中使用上下文模板<br>
+  import yaml<br>
+<br>
+  def load_context_template():<br>
+      with open('context_config.yaml', 'r') as f:<br>
+          return yaml.safe_load(f)<br>
+<br>
+  def enhance_existing_prompt(original_prompt, context_template):<br>
+      """將現有提示升級為上下文工程方法"""<br>
+      return context_template['assembly']['template'].format(<br>
+          system=context_template['system'],<br>
+          user_query=original_prompt<br>
+      )<br>
+<br>
+  步驟 4: 漸進式優化<br>
+  - 首先替換簡單提示<br>
+  - 添加記憶機制<br>
+  - 集成 RAG 檢索<br>
+  - 實現多步驟推理<br>
+  <br>
+<br>
+---新項目<br>
+   新項目中使用 Context-Engineering<br>
+  1. 項目初始化<br>
+<br>
+  # 創建新項目結構<br>
+  mkdir my-context-app<br>
+  cd my-context-app<br>
+<br>
+  # 複制核心模板<br>
+  cp -r Context-Engineering/20_templates/* ./templates/<br>
+  cp -r Context-Engineering/cognitive-tools/* ./cognitive-tools/<br>
+  cp Context-Engineering/CLAUDE.md ./<br>
+<br>
+  2. 選擇適合的架構層次<br>
+<br>
+  Level 1: 基礎應用 (Atoms → Organs)<br>
+  # 適合：聊天機器人、FAQ 系統<br>
+  from templates.minimal_context import ContextTemplate<br>
+<br>
+  class BasicChatbot:<br>
+      def __init__(self):<br>
+          self.context = ContextTemplate()<br>
+          self.memory = []<br>
+<br>
+      def respond(self, user_input):<br>
+          # 組裝上下文<br>
+          full_context = self.context.assemble(<br>
+              user_query=user_input,<br>
+              memory=self.memory[-3:]  # 保留最近3輪對話<br>
+          )<br>
+          return llm.generate(full_context)<br>
+<br>
+  Level 2: 進階應用 (Neural Systems)<br>
+  # 適合：智能助手、代碼分析工具<br>
+  from cognitive_tools.cognitive_templates import ReasoningTemplate<br>
+<br>
+  class SmartAssistant:<br>
+      def __init__(self):<br>
+          self.reasoning = ReasoningTemplate()<br>
+          self.tools = self.load_cognitive_tools()<br>
+<br>
+      def solve_problem(self, problem):<br>
+          # 使用結構化推理<br>
+          analysis = self.reasoning.analyze(problem)<br>
+          solution = self.reasoning.synthesize(analysis)<br>
+          return self.reasoning.verify(solution)<br>
+<br>
+  Level 3: 高級應用 (Field Theory)<br>
+  # 適合：多代理系統、自適應平台<br>
+  from protocols.shells import AttractorShell<br>
+<br>
+  class AdaptiveSystem:<br>
+      def __init__(self):<br>
+          self.field = AttractorShell()<br>
+          self.agents = []<br>
+<br>
+      def evolve_context(self):<br>
+          # 實現場論動力學<br>
+          attractors = self.field.detect_attractors()<br>
+          self.field.optimize_resonance(attractors)
 </div>
 
     </main>
