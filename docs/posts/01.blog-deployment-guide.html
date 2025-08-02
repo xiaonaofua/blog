@@ -10,6 +10,27 @@
     <header>
         <nav>
             <a href="https://co2sou.github.io/blog/"><h1>我的博客</h1></a>
+            <div class="nav-menu">
+                <div class="projects-dropdown">
+                    <button class="dropdown-btn" onclick="toggleProjectsDropdown()">
+                        🚀 我的項目 <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="projects-dropdown-content" id="projects-dropdown">
+                        <a href="https://co2sou.github.io/aws-english" target="_blank">
+                            🌐 AWS英語指南
+                        </a>
+                        <a href="https://co2sou.github.io/exchangeRates/" target="_blank">
+                            💱 匯率轉換器
+                        </a>
+                        <a href="https://co2sou.github.io/hao123/" target="_blank">
+                            🧭 網址導航
+                        </a>
+                        <a href="https://co2sou.github.io/wordList/" target="_blank">
+                            📚 詞彙學習
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -30,5 +51,36 @@ git push origin main
         <p>&copy; 2025 <a href="https://co2sou.github.io/blog/">我的博客</a></p>
     </footer>
 
+    <script>
+        function toggleProjectsDropdown() {
+            const dropdown = document.getElementById('projects-dropdown');
+            const button = document.querySelector('.dropdown-btn');
+            
+            if (dropdown.classList.contains('show')) {
+                dropdown.classList.remove('show');
+                button.classList.remove('active');
+            } else {
+                dropdown.classList.add('show');
+                button.classList.add('active');
+            }
+        }
+
+        // 點擊其他地方關閉下拉菜單
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.projects-dropdown');
+            if (!dropdown.contains(event.target)) {
+                document.getElementById('projects-dropdown').classList.remove('show');
+                document.querySelector('.dropdown-btn').classList.remove('active');
+            }
+        });
+
+        // ESC鍵關閉下拉菜單
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.getElementById('projects-dropdown').classList.remove('show');
+                document.querySelector('.dropdown-btn').classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

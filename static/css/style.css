@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.8;
+    line-height: 0.8;
     margin: 0;
     background-color: #ffffff;
     color: #333;
@@ -95,8 +95,8 @@ footer {
 }
 
 .post-list li {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -127,7 +127,7 @@ footer {
 
 .post-content {
     white-space: pre-wrap; /* This will respect newlines in your txt files */
-    line-height: 1.8;
+    line-height: 0.8;
 }
 
 /* Search Box */
@@ -230,4 +230,109 @@ footer {
     color: #aaa;
     font-style: italic;
     background-color: #fafafa;
+}
+
+/* Projects Dropdown Styles */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.projects-dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.dropdown-btn:hover {
+    background-color: #f5f5f5;
+    color: #555;
+}
+
+.dropdown-btn.active {
+    background-color: #f0f0f0;
+}
+
+.dropdown-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-btn.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.projects-dropdown-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    min-width: 180px;
+    z-index: 1000;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.projects-dropdown-content.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.projects-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f5f5f5;
+    transition: background-color 0.2s ease;
+}
+
+.projects-dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.projects-dropdown-content a:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .projects-dropdown-content {
+        right: 0;
+        left: auto;
+        min-width: 160px;
+    }
 }
