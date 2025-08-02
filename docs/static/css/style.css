@@ -232,115 +232,23 @@ footer {
     background-color: #fafafa;
 }
 
-/* 下拉菜单样式 */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 1000;
-}
-
-.dropdown-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px 12px;
-    font-size: 0.95rem;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.dropdown-toggle:hover {
-    color: #888;
-}
-
-.dropdown-toggle:focus {
-    outline: 2px solid #007acc;
-    outline-offset: 2px;
-}
-
-.dropdown-arrow {
-    font-size: 0.8rem;
-    transition: transform 0.3s ease;
-    pointer-events: none;
-}
-
-.dropdown.show .dropdown-arrow {
-    transform: rotate(180deg);
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    border: 1px solid #f0f0f0;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    z-index: 1001;
-    max-height: 0;
-    overflow: hidden;
-}
-
-.dropdown.show .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    max-height: 300px;
-}
-
-.dropdown-menu li {
-    border-bottom: 1px solid #f5f5f5;
-}
-
-.dropdown-menu li:last-child {
-    border-bottom: none;
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 12px 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease;
-    white-space: nowrap;
-}
-
-.dropdown-menu a:hover {
-    background-color: #f9f9f9;
-    color: #888;
-}
-
-.dropdown-menu a:focus {
-    outline: 2px solid #007acc;
-    outline-offset: -2px;
-}
-
-/* 确保下拉菜单在移动设备上也能正常工作 */
+/* 横向导航链接样式 */
 @media (max-width: 768px) {
-    .dropdown-menu {
-        right: auto;
-        left: 0;
-        min-width: 180px;
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
     
-    .dropdown-toggle {
-        padding: 10px 12px;
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
     }
 }
 

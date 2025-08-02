@@ -204,7 +204,7 @@ def main():
     index_content = f'<ul class="post-list">{index_list_items}</ul>'
     
     # 根目錄頁面的基礎路徑為空字符串
-    index_html = base_template.replace('{{ title }}', '我的極簡博客')\
+    index_html = base_template.replace('{{ title }}', '我的博客')\
                               .replace('{{ content }}', index_content)\
                               .replace('{{ base_path }}', '')
 
@@ -232,7 +232,7 @@ def main():
     rss_content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>我的極簡博客</title>
+        <title>我的博客</title>
         <link>https://co2sou.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>

@@ -11,17 +11,10 @@
         <nav>
             <a href="https://co2sou.github.io/blog/"><h1>我的博客</h1></a>
             <div class="nav-links">
-                <div class="dropdown">
-                    <button class="dropdown-toggle" type="button" aria-expanded="false">
-                        🚀 我的項目 <span class="dropdown-arrow">▼</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://co2sou.github.io/aws-english" target="_blank" rel="noopener">🌐 AWS英語指南</a></li>
-                        <li><a href="https://co2sou.github.io/exchangeRates/" target="_blank" rel="noopener">💱 匯率轉換器</a></li>
-                        <li><a href="https://co2sou.github.io/hao123/" target="_blank" rel="noopener">🧭 網址導航</a></li>
-                        <li><a href="https://co2sou.github.io/wordList/" target="_blank" rel="noopener">📚 詞彙學習</a></li>
-                    </ul>
-                </div>
+                <a href="https://co2sou.github.io/aws-english" target="_blank" rel="noopener">🌐 AWS英語指南</a>
+                <a href="https://co2sou.github.io/exchangeRates/" target="_blank" rel="noopener">💱 匯率轉換器</a>
+                <a href="https://co2sou.github.io/hao123/" target="_blank" rel="noopener">🧭 網址導航</a>
+                <a href="https://co2sou.github.io/wordList/" target="_blank" rel="noopener">📚 詞彙學習</a>
             </div>
         </nav>
     </header>
@@ -43,81 +36,5 @@ git push origin main
         <p>&copy; 2025 <a href="https://co2sou.github.io/blog/">我的博客</a></p>
     </footer>
 
-    <script>
-        // 改进的下拉菜单功能
-        (function() {
-            'use strict';
-            
-            function initDropdown() {
-                const dropdown = document.querySelector('.dropdown');
-                const toggle = document.querySelector('.dropdown-toggle');
-                const menu = document.querySelector('.dropdown-menu');
-                
-                if (!dropdown || !toggle || !menu) {
-                    console.warn('Dropdown elements not found');
-                    return;
-                }
-                
-                let isOpen = false;
-                
-                // 切换下拉菜单
-                function toggleDropdown() {
-                    isOpen = !isOpen;
-                    dropdown.classList.toggle('show', isOpen);
-                    toggle.setAttribute('aria-expanded', isOpen.toString());
-                }
-                
-                // 关闭下拉菜单
-                function closeDropdown() {
-                    if (isOpen) {
-                        isOpen = false;
-                        dropdown.classList.remove('show');
-                        toggle.setAttribute('aria-expanded', 'false');
-                    }
-                }
-                
-                // 点击切换按钮
-                toggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    toggleDropdown();
-                });
-                
-                // 点击菜单项
-                menu.addEventListener('click', function(e) {
-                    if (e.target.tagName === 'A') {
-                        // 给用户一点时间看到点击效果
-                        setTimeout(closeDropdown, 100);
-                    }
-                });
-                
-                // 点击其他地方关闭
-                document.addEventListener('click', function(e) {
-                    if (!dropdown.contains(e.target)) {
-                        closeDropdown();
-                    }
-                });
-                
-                // ESC键关闭
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && isOpen) {
-                        closeDropdown();
-                    }
-                });
-                
-                // 防止菜单内的点击事件冒泡
-                menu.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                });
-            }
-            
-            // 确保DOM加载完成后再初始化
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initDropdown);
-            } else {
-                initDropdown();
-            }
-        })();
-    </script>
 </body>
 </html>

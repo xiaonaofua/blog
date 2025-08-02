@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>我的極簡博客</title>
+        <title>我的博客</title>
         <link>https://co2sou.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 02 Aug 2025 21:48:48 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 02 Aug 2025 21:56:04 +0000</lastBuildDate>
         <item>
             <title>關於Claude Code | 第零天</title>
             <link>https://co2sou.github.io/blog/posts/02.claude-code.html</link>
