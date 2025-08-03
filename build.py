@@ -223,17 +223,17 @@ def main():
     for post in posts_metadata[:10]:  # Latest 10 posts
         rss_items += f'''<item>
             <title>{escape(post['title'])}</title>
-            <link>https://co2sou.github.io/blog/{post['path']}</link>
+            <link>https://xiaonaofua.github.io/blog/{post['path']}</link>
             <description>{escape(post['content'][:200])}...</description>
             <pubDate>{post['file_datetime'].strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
-            <guid>https://co2sou.github.io/blog/{post['path']}</guid>
+            <guid>https://xiaonaofua.github.io/blog/{post['path']}</guid>
         </item>\n'''
     
     rss_content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
         <title>我的博客</title>
-        <link>https://co2sou.github.io/blog</link>
+        <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
         <lastBuildDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S +0000')}</lastBuildDate>

@@ -49,7 +49,7 @@ def main():
             sys.exit(1)
     
     print("=" * 50)
-    print("✅ Successfully published to https://co2sou.github.io/blog")
+    print("✅ Successfully published to https://xiaonaofua.github.io/blog")
 
 if __name__ == "__main__":
     main()
