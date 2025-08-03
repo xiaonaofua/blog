@@ -6,7 +6,13 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(bunx ccusage:*)",
-      "Bash(npx ccusage:*)"
+      "Bash(npx ccusage:*)",
+      "Bash(dir docs)",
+      "Bash(ls:*)",
+      "Bash(rmdir:*)",
+      "Bash(rm:*)",
+      "Bash(chcp:*)",
+      "Bash(taskkill:*)"
     ],
     "deny": []
   }

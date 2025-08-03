@@ -81,8 +81,20 @@ def main():
 
     # Clean and recreate output directory
     if os.path.exists(OUTPUT_DIR):
-        shutil.rmtree(OUTPUT_DIR)
-    os.makedirs(POSTS_DIR)
+        try:
+            shutil.rmtree(OUTPUT_DIR)
+        except PermissionError:
+            print(f"Warning: Could not remove {OUTPUT_DIR}. Trying to clean contents...")
+            for item in os.listdir(OUTPUT_DIR):
+                item_path = os.path.join(OUTPUT_DIR, item)
+                try:
+                    if os.path.isdir(item_path):
+                        shutil.rmtree(item_path)
+                    else:
+                        os.remove(item_path)
+                except PermissionError:
+                    print(f"Warning: Could not remove {item_path}")
+    os.makedirs(POSTS_DIR, exist_ok=True)
 
     # Copy static files
     copy_static_files()
@@ -113,9 +125,11 @@ def main():
             content_raw = read_file(filepath)
             is_markdown = filename.endswith('.md')
 
-            # Get file modification time for sorting
-            file_mtime = os.path.getmtime(filepath)
-            file_datetime = datetime.fromtimestamp(file_mtime)
+            # Get file creation and modification times
+            file_ctime = os.path.getctime(filepath)  # Creation time
+            file_mtime = os.path.getmtime(filepath)  # Modification time
+            file_create_datetime = datetime.fromtimestamp(file_ctime)
+            file_modify_datetime = datetime.fromtimestamp(file_mtime)
 
             # Process and modify the txt file content
             lines = content_raw.strip().split('\n')
@@ -170,8 +184,10 @@ def main():
             post_info = {
                 'title': title,
                 'path': post_path,
-                'file_datetime': file_datetime,  # Use file modification time for sorting
-                'date': file_datetime.strftime('%Y-%m-%d %H:%M:%S'),  # Display format with time
+                'file_create_datetime': file_create_datetime,  # Creation time for sorting
+                'file_modify_datetime': file_modify_datetime,  # Modification time
+                'create_date': file_create_datetime.strftime('%Y-%m-%d %H:%M:%S'),  # Creation date display
+                'modify_date': file_modify_datetime.strftime('%Y-%m-%d %H:%M:%S'),   # Modification date display
                 'content': body,
                 'word_count': word_count,
                 'reading_time': reading_time
@@ -180,13 +196,14 @@ def main():
 
 
 
-    # Sort posts by file modification time, newest first
-    posts_metadata.sort(key=lambda p: p['file_datetime'], reverse=True)
+    # Sort posts by file creation time, newest first
+    posts_metadata.sort(key=lambda p: p['file_create_datetime'], reverse=True)
 
     # --- Generate Individual Post Pages ---
     for post in posts_metadata:
         post_html_content = post_template.replace('{{ title }}', post['title'])\
-                                       .replace('{{ date }}', post['date'])\
+                                       .replace('{{ create_date }}', post['create_date'])\
+                                       .replace('{{ modify_date }}', post['modify_date'])\
                                        .replace('{{ content }}', post['content'])
         
         # 子目錄頁面需要使用 ../ 作為基礎路徑
@@ -199,7 +216,7 @@ def main():
     # --- Generate Index Page ---
     index_list_items = ''
     for post in posts_metadata:
-        index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">{post["date"]}</div></li>\n'
+        index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
     
     index_content = f'<ul class="post-list">{index_list_items}</ul>'
     
@@ -225,7 +242,7 @@ def main():
             <title>{escape(post['title'])}</title>
             <link>https://xiaonaofua.github.io/blog/{post['path']}</link>
             <description>{escape(post['content'][:200])}...</description>
-            <pubDate>{post['file_datetime'].strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
+            <pubDate>{post['file_create_datetime'].strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
             <guid>https://xiaonaofua.github.io/blog/{post['path']}</guid>
         </item>\n'''
     

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於Claude Code | Claude Pro 第二天</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://xiaonaofua.github.io/blog/"><h1>我的博客</h1></a>
+            <div class="nav-links">
+                <a href="https://xiaonaofua.github.io/aws-english" target="_blank" rel="noopener">AWS英語指南</a>
+                <a href="https://xiaonaofua.github.io/exchangeRates/" target="_blank" rel="noopener">匯率轉換器</a>
+                <a href="https://xiaonaofua.github.io/hao123/" target="_blank" rel="noopener">網址導航</a>
+                <a href="https://xiaonaofua.github.io/wordList/" target="_blank" rel="noopener">詞彙學習</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>關於Claude Code | Claude Pro 第二天</h1>
+<div class="post-meta">創建: 2025-08-03 20:12:54 | 更新: 2025-08-03 20:21:52</div>
+<div class="post-content">
+    兩個事；<br>
+<br>
+1<br>
+github發生了如下Action的錯誤，通過跟claude code對話，15分鐘以内就解決掉了。 <br>
+Deploy to GitHub Pages: All jobs have failed<br>
+<br>
+  Workflow permissions 設置可能是問題所在<br>
+  目前有兩個選項：<br>
+  - ✅ Read and write permissions - 工作流對所有範圍都有讀寫權限<br>
+  - ❌ Read repository contents and packages permissions - 僅對內容和包有讀取權限<br>
+<br>
+2<br>
+在把博客變成像素風以後，想做如下更改，claude code的需求分析太厲害了。總結能力很强。<br>
+> 我的博客的 文字的部分和，每個文章的標題部分 都有重影效果，把它去掉吧。還有，現在的文章<br>
+  只看txt，md的更新時間，沒有看這些文檔的創建時間。我想兩個都看。然後，在主頁顯示的時候按照創      <br>
+  建時間的新舊順序來表示，而不是更新時間。然後，在文章詳細的畫面中，兩個時間都表示出來。<br>
+<br>
+✻ Thinking…<br>
+<br>
+  用户提出了几个需求：<br>
+  1. 去掉文字和文章标题的重影效果（text-shadow）<br>
+  2. 同时获取文件的创建时间和修改时间<br>
+  3. 主页按创建时间排序而不是修改时间<br>
+  4. 文章详细页面显示两个时间<br>
+<br>
+  我需要：<br>
+  1. 先修改CSS去掉text-shadow效果<br>
+  2. 然后修改build.py脚本来获取和处理创建时间<br>
+  3. 修改模板来显示两个时间
+</div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 <a href="https://xiaonaofua.github.io/blog/">我的博客</a></p>
+    </footer>
+
+</body>
+</html>
