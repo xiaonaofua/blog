@@ -88,12 +88,80 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* 博客标题样式 - 与导航链接一致 */
+nav > a {
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+nav > a h1 {
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+nav > a:hover h1 {
+    color: #00ff41 !important;
+    transform: scale(1.05);
+}
+
+/* 移除博客标题的三角形符号 */
+
+nav > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ff41;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+    transition: width 0.3s ease;
+}
+
+nav > a:hover::after {
+    width: 100%;
+}
+
 h1 {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
     color: #ffffff;
+}
+
+/* 文章页面标题样式 - 与导航链接一致 */
+main > h1 {
+    position: relative;
+    padding: 5px 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* 移除文章页面标题的三角形符号 */
+
+main > h1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ff41;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+    transition: width 0.3s ease;
+}
+
+main > h1:hover::after {
+    width: 100%;
+}
+
+main > h1:hover {
+    color: #00ff41;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
 main {
@@ -142,14 +210,7 @@ footer a:hover {
     position: relative;
 }
 
-.post-list li::before {
-    content: "■ ";
-    color: #00ff41;
-    font-size: 14px;
-    position: absolute;
-    left: 8px;
-    top: 8px;
-}
+/* 移除文章列表项的■符号，因为链接现在有▶符号了 */
 
 .post-list li:last-child {
     border-bottom: 2px solid #00ff41;
@@ -163,19 +224,39 @@ footer a:hover {
     transition: all 0.3s ease;
     display: block;
     margin-bottom: 0.5rem;
-    margin-left: 20px;
+    margin-left: 8px;
+    position: relative;
+    padding: 5px 0;
+}
+
+/* 移除文章列表的三角形符号 */
+
+.post-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ff41;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+    transition: width 0.3s ease;
 }
 
 .post-list a:hover {
     color: #00ff41;
-    transform: translateX(5px);
+    transform: scale(1.05);
+}
+
+.post-list a:hover::after {
+    width: 100%;
 }
 
 .post-meta {
     color: #666;
     font-size: 10px;
     margin-bottom: 1rem;
-    margin-left: 20px;
+    margin-left: 8px;
     display: block;
 }
 
@@ -294,6 +375,124 @@ footer a:hover {
     background-color: #fafafa;
 }
 
+/* 分页导航样式 */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.pagination .page-link {
+    text-decoration: none;
+    color: #00ff41;
+    padding: 8px 12px;
+    border: 1px solid #00ff41;
+    background-color: #1a1a2e;
+    transition: all 0.3s ease;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.pagination .page-link:hover {
+    background-color: #00ff41;
+    color: #0f0f23;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.pagination .page-link.disabled {
+    color: #666;
+    border-color: #666;
+    cursor: not-allowed;
+}
+
+.pagination .page-link.disabled:hover {
+    background-color: #1a1a2e;
+    color: #666;
+    box-shadow: none;
+}
+
+.pagination .page-numbers {
+    display: flex;
+    gap: 5px;
+    margin: 0 10px;
+}
+
+.pagination .page-number {
+    text-decoration: none;
+    color: #00ff41;
+    padding: 5px 10px;
+    border: 1px solid #00ff41;
+    background-color: #1a1a2e;
+    transition: all 0.3s ease;
+    font-size: 11px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.pagination .page-number:hover {
+    background-color: #00ff41;
+    color: #0f0f23;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+}
+
+.pagination .current-page {
+    padding: 5px 10px;
+    background-color: #00ff41;
+    color: #0f0f23;
+    border: 1px solid #00ff41;
+    font-size: 11px;
+    min-width: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.7);
+}
+
+/* 文章导航样式 */
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid #00ff41;
+    background-color: #1a1a2e;
+    box-shadow: 
+        0 0 10px rgba(0, 255, 65, 0.2),
+        inset 0 0 10px rgba(0, 255, 65, 0.05);
+}
+
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+    flex: 1;
+    text-align: center;
+}
+
+.post-navigation .nav-previous {
+    text-align: left;
+}
+
+.post-navigation .nav-next {
+    text-align: right;
+}
+
+.post-navigation a {
+    text-decoration: none;
+    color: #00ff41;
+    font-size: 11px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.post-navigation a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
 /* 横向导航链接样式 */
 @media (max-width: 768px) {
     nav {
@@ -311,6 +510,27 @@ footer a:hover {
     .nav-links a {
         padding: 8px 12px;
         font-size: 0.85rem;
+    }
+    
+    .pagination {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .pagination .page-numbers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .post-navigation {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .post-navigation .nav-previous,
+    .post-navigation .nav-next {
+        text-align: center;
     }
 }
 

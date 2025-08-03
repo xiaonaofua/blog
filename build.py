@@ -12,6 +12,7 @@ TEMPLATE_DIR = 'templates'
 OUTPUT_DIR = 'docs'
 POSTS_DIR = os.path.join(OUTPUT_DIR, 'posts')
 CACHE_FILE = '.build_cache.json'
+POSTS_PER_PAGE = 10
 
 # --- Helper Functions ---
 def read_file(path):
@@ -74,6 +75,45 @@ def estimate_reading_time(content):
     # Assume 200 words per minute reading speed
     minutes = max(1, round(words / 200))
     return f"{minutes} min read"
+
+def generate_pagination_html(current_page, total_pages, base_path=''):
+    """Generate pagination navigation HTML."""
+    if total_pages <= 1:
+        return ''
+    
+    pagination_html = '<div class="pagination">'
+    
+    # Previous page link
+    if current_page > 1:
+        prev_page = current_page - 1
+        if prev_page == 1:
+            pagination_html += f'<a href="{base_path}index.html" class="page-link">← 上一页</a>'
+        else:
+            pagination_html += f'<a href="{base_path}page{prev_page}.html" class="page-link">← 上一页</a>'
+    else:
+        pagination_html += '<span class="page-link disabled">← 上一页</span>'
+    
+    # Page numbers
+    pagination_html += '<span class="page-numbers">'
+    for page in range(1, total_pages + 1):
+        if page == current_page:
+            pagination_html += f'<span class="current-page">{page}</span>'
+        else:
+            if page == 1:
+                pagination_html += f'<a href="{base_path}index.html" class="page-number">{page}</a>'
+            else:
+                pagination_html += f'<a href="{base_path}page{page}.html" class="page-number">{page}</a>'
+    pagination_html += '</span>'
+    
+    # Next page link
+    if current_page < total_pages:
+        next_page = current_page + 1
+        pagination_html += f'<a href="{base_path}page{next_page}.html" class="page-link">下一页 →</a>'
+    else:
+        pagination_html += '<span class="page-link disabled">下一页 →</span>'
+    
+    pagination_html += '</div>'
+    return pagination_html
 
 # --- Main Build Logic ---
 def main():
@@ -200,11 +240,30 @@ def main():
     posts_metadata.sort(key=lambda p: p['file_create_datetime'], reverse=True)
 
     # --- Generate Individual Post Pages ---
-    for post in posts_metadata:
+    for i, post in enumerate(posts_metadata):
+        # Generate navigation for previous/next posts
+        nav_html = '<div class="post-navigation">'
+        
+        # Previous post (newer)
+        if i > 0:
+            prev_post = posts_metadata[i - 1]
+            nav_html += f'<div class="nav-previous"><a href="../{prev_post["path"]}">← 上一篇: {prev_post["title"]}</a></div>'
+        else:
+            nav_html += '<div class="nav-previous"></div>'
+        
+        # Next post (older)
+        if i < len(posts_metadata) - 1:
+            next_post = posts_metadata[i + 1]
+            nav_html += f'<div class="nav-next"><a href="../{next_post["path"]}">下一篇: {next_post["title"]} →</a></div>'
+        else:
+            nav_html += '<div class="nav-next"></div>'
+        
+        nav_html += '</div>'
+        
         post_html_content = post_template.replace('{{ title }}', post['title'])\
                                        .replace('{{ create_date }}', post['create_date'])\
                                        .replace('{{ modify_date }}', post['modify_date'])\
-                                       .replace('{{ content }}', post['content'])
+                                       .replace('{{ content }}', post['content'] + nav_html)
         
         # 子目錄頁面需要使用 ../ 作為基礎路徑
         full_page_html = base_template.replace('{{ title }}', post['title'])\
@@ -213,27 +272,80 @@ def main():
         
         write_file(os.path.join(OUTPUT_DIR, post['path']), full_page_html)
 
-    # --- Generate Index Page ---
-    index_list_items = ''
-    for post in posts_metadata:
-        index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
+    # --- Generate Index Pages with Pagination ---
+    total_posts = len(posts_metadata)
+    total_pages = (total_posts + POSTS_PER_PAGE - 1) // POSTS_PER_PAGE  # Ceiling division
     
-    index_content = f'<ul class="post-list">{index_list_items}</ul>'
+    for page_num in range(1, total_pages + 1):
+        start_idx = (page_num - 1) * POSTS_PER_PAGE
+        end_idx = min(start_idx + POSTS_PER_PAGE, total_posts)
+        page_posts = posts_metadata[start_idx:end_idx]
+        
+        # Generate post list for this page
+        index_list_items = ''
+        for post in page_posts:
+            index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
+        
+        post_list_html = f'<ul class="post-list">{index_list_items}</ul>'
+        
+        # Generate pagination navigation
+        pagination_html = generate_pagination_html(page_num, total_pages, '')
+        
+        # Combine content
+        index_content = post_list_html + pagination_html
+        
+        # Generate page title
+        if page_num == 1:
+            page_title = '小腦斧啊的博客'
+        else:
+            page_title = f'小腦斧啊的博客 - 第{page_num}页'
+        
+        # 根目錄頁面的基礎路徑為空字符串
+        index_html = base_template.replace('{{ title }}', page_title)\
+                                  .replace('{{ content }}', index_content)\
+                                  .replace('{{ base_path }}', '')
+        
+        # Write the page
+        if page_num == 1:
+            write_file(os.path.join(OUTPUT_DIR, 'index.html'), index_html)
+        else:
+            write_file(os.path.join(OUTPUT_DIR, f'page{page_num}.html'), index_html)
     
-    # 根目錄頁面的基礎路徑為空字符串
-    index_html = base_template.replace('{{ title }}', '我的博客')\
-                              .replace('{{ content }}', index_content)\
-                              .replace('{{ base_path }}', '')
-
-    write_file(os.path.join(OUTPUT_DIR, 'index.html'), index_html)
-    
-    # --- Generate Posts Index Page ---
-    # 子目錄頁面需要使用 ../ 作為基礎路徑
-    posts_index_html = base_template.replace('{{ title }}', '所有文章')\
-                                   .replace('{{ content }}', index_content)\
-                                   .replace('{{ base_path }}', '../')
-
-    write_file(os.path.join(POSTS_DIR, 'index.html'), posts_index_html)
+    # --- Generate Posts Index Pages with Pagination ---
+    for page_num in range(1, total_pages + 1):
+        start_idx = (page_num - 1) * POSTS_PER_PAGE
+        end_idx = min(start_idx + POSTS_PER_PAGE, total_posts)
+        page_posts = posts_metadata[start_idx:end_idx]
+        
+        # Generate post list for this page
+        posts_list_items = ''
+        for post in page_posts:
+            posts_list_items += f'<li><a href="{post["path"].replace("posts/", "")}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
+        
+        post_list_html = f'<ul class="post-list">{posts_list_items}</ul>'
+        
+        # Generate pagination navigation (for subdirectory)
+        pagination_html = generate_pagination_html(page_num, total_pages, '')
+        
+        # Combine content
+        posts_index_content = post_list_html + pagination_html
+        
+        # Generate page title
+        if page_num == 1:
+            page_title = '所有文章'
+        else:
+            page_title = f'所有文章 - 第{page_num}页'
+        
+        # 子目錄頁面需要使用 ../ 作為基礎路徑
+        posts_index_html = base_template.replace('{{ title }}', page_title)\
+                                       .replace('{{ content }}', posts_index_content)\
+                                       .replace('{{ base_path }}', '../')
+        
+        # Write the page
+        if page_num == 1:
+            write_file(os.path.join(POSTS_DIR, 'index.html'), posts_index_html)
+        else:
+            write_file(os.path.join(POSTS_DIR, f'page{page_num}.html'), posts_index_html)
     
     # --- Generate RSS Feed ---
     rss_items = ''
@@ -249,7 +361,7 @@ def main():
     rss_content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>我的博客</title>
+        <title>小腦斧啊的博客</title>
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>

@@ -12,7 +12,8 @@
       "Bash(rmdir:*)",
       "Bash(rm:*)",
       "Bash(chcp:*)",
-      "Bash(taskkill:*)"
+      "Bash(taskkill:*)",
+      "Bash(del:*)"
     ],
     "deny": []
   }
