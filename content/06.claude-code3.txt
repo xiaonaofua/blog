@@ -1,0 +1,9 @@
+關於Claude Code | Claude Pro 第三天
+
+在準備az-400的考試。微軟提供了50道練習題目。
+https://learn.microsoft.com/zh-cn/credentials/certifications/exams/az-400/
+點擊【进行免费的练习评估】即可。
+https://learn.microsoft.com/zh-cn/credentials/certifications/exams/az-400/practice/assessment?assessment-type=practice&assessmentId=56
+
+另外通過Claude Code在公共互聯網上找到了英語的習題，把它翻譯成中文，並做成網頁，發佈到GitHub上了。
+https://xiaonaofua.github.io/az400/
