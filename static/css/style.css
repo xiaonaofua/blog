@@ -36,32 +36,41 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 0 20px;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
+.blog-title {
+    margin-bottom: 1rem;
+    align-self: flex-start;
 }
 
-.nav-links a {
-    margin-right: 20px;
+.external-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.external-nav a {
     font-size: 0.95rem;
     font-weight: 400;
     padding: 5px 0;
     position: relative;
+    text-decoration: none;
+    color: #00ff41;
+    transition: all 0.3s ease;
 }
 
-.nav-links a::before {
+.external-nav a::before {
     content: "▶ ";
     color: #00ff41;
     font-size: 10px;
     margin-right: 5px;
 }
 
-.nav-links a::after {
+.external-nav a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -73,7 +82,12 @@ nav {
     transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after {
+.external-nav a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.external-nav a:hover::after {
     width: 100%;
 }
 
@@ -493,7 +507,7 @@ footer a:hover {
     text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
 }
 
-/* 横向导航链接样式 */
+/* 响应式设计 */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -501,13 +515,11 @@ footer a:hover {
         align-items: flex-start;
     }
     
-    .nav-links {
-        width: 100%;
-        flex-wrap: wrap;
+    .external-nav {
         gap: 10px;
     }
     
-    .nav-links a {
+    .external-nav a {
         padding: 8px 12px;
         font-size: 0.85rem;
     }

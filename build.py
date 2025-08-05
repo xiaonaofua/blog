@@ -115,6 +115,52 @@ def generate_pagination_html(current_page, total_pages, base_path=''):
     pagination_html += '</div>'
     return pagination_html
 
+def parse_navigation_file():
+    """Parse navigation.txt file and return navigation data."""
+    navi_file = os.path.join(CONTENT_DIR, 'navi.txt')
+    navigation_items = []
+    
+    if not os.path.exists(navi_file):
+        # 如果navi.txt不存在，返回默认导航
+        return [
+            {'name': 'AWS英語指南', 'url': 'https://xiaonaofua.github.io/aws-english', 'date': '2025.07.22'},
+            {'name': '匯率轉換器', 'url': 'https://xiaonaofua.github.io/exchangeRates/', 'date': '2025.06.15'},
+            {'name': '網址導航', 'url': 'https://xiaonaofua.github.io/hao123/', 'date': '2025.05.10'},
+            {'name': '詞彙學習', 'url': 'https://xiaonaofua.github.io/wordList/', 'date': '2025.04.08'}
+        ]
+    
+    try:
+        with open(navi_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#'):  # 跳过空行和注释
+                    parts = line.split(' | ')
+                    if len(parts) >= 3:
+                        navigation_items.append({
+                            'name': parts[0].strip(),
+                            'url': parts[1].strip(),
+                            'date': parts[2].strip()
+                        })
+    except Exception as e:
+        print(f"Warning: Could not parse navi.txt: {e}")
+        # 返回默认导航
+        return [
+            {'name': 'AWS英語指南', 'url': 'https://xiaonaofua.github.io/aws-english', 'date': '2025.07.22'},
+            {'name': '匯率轉換器', 'url': 'https://xiaonaofua.github.io/exchangeRates/', 'date': '2025.06.15'},
+            {'name': '網址導航', 'url': 'https://xiaonaofua.github.io/hao123/', 'date': '2025.05.10'},
+            {'name': '詞彙學習', 'url': 'https://xiaonaofua.github.io/wordList/', 'date': '2025.04.08'}
+        ]
+    
+    return navigation_items
+
+def generate_navigation_html(navigation_items):
+    """Generate navigation HTML from navigation items."""
+    nav_html = '<div class="external-nav">'
+    for item in navigation_items:
+        nav_html += f'<a href="{item["url"]}" target="_blank" rel="noopener">{item["name"]}({item["date"]})</a>'
+    nav_html += '</div>'
+    return nav_html
+
 # --- Main Build Logic ---
 def main():
     print("Starting blog build...")
@@ -143,6 +189,10 @@ def main():
     base_template = read_file(os.path.join(TEMPLATE_DIR, 'base.html'))
     post_template = read_file(os.path.join(TEMPLATE_DIR, 'post.html'))
 
+    # Parse navigation from navi.txt
+    navigation_items = parse_navigation_file()
+    navigation_html = generate_navigation_html(navigation_items)
+
     posts_metadata = []
 
     # Load cache for change detection
@@ -151,7 +201,7 @@ def main():
     
     # Process content files
     for filename in os.listdir(CONTENT_DIR):
-        if filename.endswith('.txt') or filename.endswith('.md'):
+        if (filename.endswith('.txt') or filename.endswith('.md')) and filename != 'navi.txt':
             filepath = os.path.join(CONTENT_DIR, filename)
             
             # Check if file has changed
@@ -268,7 +318,8 @@ def main():
         # 子目錄頁面需要使用 ../ 作為基礎路徑
         full_page_html = base_template.replace('{{ title }}', post['title'])\
                                       .replace('{{ content }}', post_html_content)\
-                                      .replace('{{ base_path }}', '../')
+                                      .replace('{{ base_path }}', '../')\
+                                      .replace('{{ navigation }}', navigation_html)
         
         write_file(os.path.join(OUTPUT_DIR, post['path']), full_page_html)
 
@@ -303,7 +354,8 @@ def main():
         # 根目錄頁面的基礎路徑為空字符串
         index_html = base_template.replace('{{ title }}', page_title)\
                                   .replace('{{ content }}', index_content)\
-                                  .replace('{{ base_path }}', '')
+                                  .replace('{{ base_path }}', '')\
+                                  .replace('{{ navigation }}', navigation_html)
         
         # Write the page
         if page_num == 1:
@@ -339,7 +391,8 @@ def main():
         # 子目錄頁面需要使用 ../ 作為基礎路徑
         posts_index_html = base_template.replace('{{ title }}', page_title)\
                                        .replace('{{ content }}', posts_index_content)\
-                                       .replace('{{ base_path }}', '../')
+                                       .replace('{{ base_path }}', '../')\
+                                       .replace('{{ navigation }}', navigation_html)
         
         # Write the page
         if page_num == 1:
