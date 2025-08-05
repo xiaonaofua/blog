@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Tue, 05 Aug 2025 22:23:23 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 05 Aug 2025 22:30:24 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第四天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/07.claude-code4.html</link>
+            <description>用Claude Code製作了如下可以把圖片轉換成ASCII字符的網站。&lt;br&gt;
+https://xiaonaofua.github.io/asciiArt/&lt;br&gt;
+&lt;br&gt;
+..................................................................................................................</description>
+            <pubDate>Tue, 05 Aug 2025 22:27:05 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/07.claude-code4.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第三天</title>
             <link>https://xiaonaofua.github.io/blog/posts/06.claude-code3.html</link>
             <description>在準備az-400的考試。微軟提供了50道練習題目。&lt;br&gt;
