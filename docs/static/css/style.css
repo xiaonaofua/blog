@@ -103,25 +103,26 @@ nav a:hover {
 }
 
 /* 博客标题样式 - 与导航链接一致 */
-nav > a {
+.blog-title a {
     position: relative;
     padding: 5px 0;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-nav > a h1 {
+.blog-title a h1 {
     color: #ffffff !important;
     transition: all 0.3s ease;
 }
 
-nav > a:hover h1 {
+.blog-title a:hover h1 {
     color: #00ff41 !important;
     transform: scale(1.05);
 }
 
 /* 移除博客标题的三角形符号 */
 
-nav > a::after {
+.blog-title a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -133,7 +134,7 @@ nav > a::after {
     transition: width 0.3s ease;
 }
 
-nav > a:hover::after {
+.blog-title a:hover::after {
     width: 100%;
 }
 
