@@ -5,19 +5,22 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Wed, 06 Aug 2025 21:20:13 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 06 Aug 2025 21:22:45 +0000</lastBuildDate>
         <item>
             <title>關於Claude Code | Claude Pro 第五天</title>
             <link>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</link>
             <description>用Claude Code製作了如下這個像素風的放水燈的網站。&lt;br&gt;
 https://xiaonaofua.github.io/toro/&lt;br&gt;
 &lt;br&gt;
-技術棧如下：&lt;br&gt;
- HTML5 Canvas + JavaScript + Supabase + GitHub Pages&lt;br&gt;
+Todo：&lt;br&gt;
+手機版的對應&lt;br&gt;
+像素風水燈的外形改善&lt;br&gt;
+像素風水燈的近大遠小&lt;br&gt;
+水聲音效&lt;br&gt;
 &lt;br&gt;
-源代碼構造如下：&lt;br&gt;
-toro/&lt;br&gt;
-├── index.html        (主頁...</description>
+&lt;br&gt;
+技術棧如下：&lt;br&gt;
+ HTML5 Canvas + JavaScript + Supabase + ...</description>
             <pubDate>Wed, 06 Aug 2025 21:14:00 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</guid>
         </item>
