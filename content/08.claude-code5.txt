@@ -1,0 +1,19 @@
+關於Claude Code | Claude Pro 第五天
+
+用Claude Code製作了如下這個像素風的放水燈的網站。
+https://xiaonaofua.github.io/toro/
+
+技術棧如下：
+ HTML5 Canvas + JavaScript + Supabase + GitHub Pages
+
+源代碼構造如下：
+toro/
+├── index.html        (主頁面)
+├── app.js            (核心邏輯)
+├── push.bat          (部署腳本)
+└── .gitignore        (排除規則)
+
+心得：
+Claude Code果然也會有失誤，這次出現的失誤是superbase的表的列名大小寫與代碼的列名大小寫不一致，所以傳輸數據時出現了錯誤，消耗了很多問題解決時間。
+Claude Code對Git的理解很厲害。寫.gitignore很快。現在製作每一個項目，都習慣讓它幫我寫一個一鍵部署的.bat文件。這樣自己一鍵操作就能節省它的工作時間也節省了所需Token。
+

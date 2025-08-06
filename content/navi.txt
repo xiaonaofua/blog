@@ -5,3 +5,4 @@ blog | https://xiaonaofua.github.io/blog/ | 2025.07.20
 匯率轉換器 | https://xiaonaofua.github.io/exchangeRates/ | 2025.07.31
 az400 | https://xiaonaofua.github.io/az400/ | 2025.08.03
 asciiArt | https://xiaonaofua.github.io/asciiArt/ | 2025.08.05
+放水燈 | https://xiaonaofua.github.io/toro/ | 2025.08.06
