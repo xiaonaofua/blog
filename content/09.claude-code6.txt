@@ -1,0 +1,9 @@
+關於Claude Code | Claude Pro 第六天
+
+跟Claude Code交流了很久，才改了幾個bug。
+https://xiaonaofua.github.io/toro/
+
+心得：
+Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範 從數據 到代碼 都用一致的命名規則和大小寫規範就不易出錯了。
+Claude Code對任務的解讀和美感的視野很寬 知識積纍很多，比我個人要強。
+

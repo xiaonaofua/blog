@@ -5,8 +5,20 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Wed, 06 Aug 2025 21:22:49 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 07 Aug 2025 23:23:38 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第六天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</link>
+            <description>跟Claude Code交流了很久，才改了幾個bug。&lt;br&gt;
+https://xiaonaofua.github.io/toro/&lt;br&gt;
+&lt;br&gt;
+心得：&lt;br&gt;
+Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範 從數據 到代碼 都用一致的命名規則和大小寫規範就不易出錯了。&lt;br&gt;
+Claude Code對任務的解讀和美感的視野很寬 知識積纍很多，比我個人要強。...</description>
+            <pubDate>Thu, 07 Aug 2025 23:20:02 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第五天</title>
             <link>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</link>
             <description>用Claude Code製作了如下這個像素風的放水燈的網站。&lt;br&gt;
