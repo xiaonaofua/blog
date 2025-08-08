@@ -5,11 +5,12 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Fri, 08 Aug 2025 22:19:52 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 08 Aug 2025 23:40:52 +0000</lastBuildDate>
         <item>
             <title>關於Claude Code | Claude Pro 第七天</title>
             <link>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</link>
-            <description>https://xiaonaofua.github.io/toro/&lt;br&gt;
+            <description>一）&lt;br&gt;
+https://xiaonaofua.github.io/toro/&lt;br&gt;
 對放水燈的應用增加了如下功能&lt;br&gt;
 1⃣ 橫屏/竪屏適配&lt;br&gt;
 ✅ 自動檢測設備方向&lt;br&gt;
@@ -19,7 +20,7 @@
 2⃣ 竪屏拖拽瀏覽&lt;br&gt;
 ✅ 水平拖拽查看完整橫屏內容&lt;br&gt;
 ✅ 平滑拖拽體驗和邊界限制&lt;br&gt;
-✅ 實時滾動條位置...</description>
+✅ ...</description>
             <pubDate>Fri, 08 Aug 2025 22:08:44 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</guid>
         </item>
