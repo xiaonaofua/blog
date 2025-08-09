@@ -48,6 +48,9 @@ def save_cache(cache):
 
 def markdown_to_html(text):
     """Simple Markdown to HTML converter."""
+    # Strip leading and trailing whitespace/newlines first
+    text = text.strip()
+    
     # Headers
     text = re.sub(r'^### (.*$)', r'<h3>\1</h3>', text, flags=re.MULTILINE)
     text = re.sub(r'^## (.*$)', r'<h2>\1</h2>', text, flags=re.MULTILINE)
@@ -260,8 +263,13 @@ def main():
             if is_markdown:
                 body = markdown_to_html(body)
             else:
-                # For txt files, preserve line breaks
-                body = body.replace('\n', '<br>\n')
+                # For txt files, preserve original formatting with pre tag
+                body = body.strip()
+                # Escape HTML characters to prevent issues
+                import html
+                body = html.escape(body)
+                # Wrap in pre tag to preserve whitespace and formatting
+                body = f'<pre style="white-space: pre-wrap; font-family: inherit; margin: 0;">{body}</pre>'
             
             # Calculate reading time and word count
             word_count = len(body.split())

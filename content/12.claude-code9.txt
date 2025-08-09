@@ -1,0 +1,13 @@
+關於Claude Code | Claude Pro 第九天
+
+SuperClaude Windows 安裝總結
+  1. pip install SuperClaude
+  2. python -m SuperClaude install --quick
+   - 安裝過程中會詢問幾個確認問題，按 y 確認即可
+   - 在 Windows 上使用 python -m SuperClaude 而不是直接使用 SuperClaude 命令
+
+  安裝完成後，在 Claude Code 中可以使用：
+  - /help - 查看可用命令
+  - /analyze - 分析檔案
+  - /build - 建置專案
+  - /improve - 改善代碼

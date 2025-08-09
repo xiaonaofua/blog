@@ -5,104 +5,105 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 09 Aug 2025 23:37:50 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 10 Aug 2025 07:34:35 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第九天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;SuperClaude Windows 安裝總結
+  1. pip install SuperClaude
+  2. python -m SuperClaude install --quick
+   - 安裝過程中會詢問幾個確認問題，按 y 確認即可
+   - ...</description>
+            <pubDate>Sun, 10 Aug 2025 07:24:40 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第八天</title>
             <link>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</link>
-            <description>一）Windows上的Claudia.exe終於編譯成功了。試著用了一下，還沒有適應。&lt;br&gt;
-但，Token用量的顯示這個項目太好用了。顯示我這一周用的就已經快到60美元了。ClaudePro的每月是20美元，這樣看太超值了！&lt;br&gt;
-&lt;br&gt;
----&lt;br&gt;
-Total Cost&lt;br&gt;
-$57.7998&lt;br&gt;
-&lt;br&gt;
-Total Tokens&lt;br&gt;
-102.79M&lt;br&gt;
----&lt;br...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;一）Windows上的Claudia.exe終於編譯成功了。試著用了一下，還沒有適應。
+但，Token用量的顯示這個項目太好用了。顯示我這一周用的就已經快到60美元了。ClaudePro的每月是20美元，這樣看太超值了！
+
+---
+Total Cost
+$57....</description>
             <pubDate>Sat, 09 Aug 2025 23:31:31 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</guid>
         </item>
 <item>
             <title>關於Claude Code | Claude Pro 第七天</title>
             <link>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</link>
-            <description>一）&lt;br&gt;
-https://xiaonaofua.github.io/toro/&lt;br&gt;
-對放水燈的應用增加了如下功能&lt;br&gt;
-1⃣ 橫屏/竪屏適配&lt;br&gt;
-✅ 自動檢測設備方向&lt;br&gt;
-✅ 橫屏：完整展示山湖全景&lt;br&gt;
-✅ 竪屏：世界視圖比屏幕更寬（16:10 比例）&lt;br&gt;
-&lt;br&gt;
-2⃣ 竪屏拖拽瀏覽&lt;br&gt;
-✅ 水平拖拽查看完整橫屏內容&lt;br&gt;
-✅ 平滑拖拽體驗和邊界限制&lt;br&gt;
-✅ ...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;一）
+https://xiaonaofua.github.io/toro/
+對放水燈的應用增加了如下功能
+1⃣ 橫屏/竪屏適配
+✅ 自動檢測設備方向
+✅ 橫屏：完整展示山湖全景
+✅ 竪屏：世界視圖比屏幕更寬（16:10 比例）
+
+2⃣ 竪屏拖拽瀏覽
+✅ 水平拖拽...</description>
             <pubDate>Fri, 08 Aug 2025 22:08:44 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</guid>
         </item>
 <item>
             <title>關於Claude Code | Claude Pro 第六天</title>
             <link>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</link>
-            <description>跟Claude Code交流了很久，才改了幾個bug。&lt;br&gt;
-https://xiaonaofua.github.io/toro/&lt;br&gt;
-&lt;br&gt;
-心得：&lt;br&gt;
-Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範 從數據 到代碼 都用一致的命名規則和大小寫規範就不易出錯了。&lt;br&gt;
-Claude Code對任務的解讀和美感的視野很寬 知識積纍很多，比我個人要強。...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;跟Claude Code交流了很久，才改了幾個bug。
+https://xiaonaofua.github.io/toro/
+
+心得：
+Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範 從數據 到代碼 都用一致的命名規則和大小寫規...</description>
             <pubDate>Thu, 07 Aug 2025 23:20:02 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</guid>
         </item>
 <item>
             <title>關於Claude Code | Claude Pro 第五天</title>
             <link>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</link>
-            <description>用Claude Code製作了如下這個像素風的放水燈的網站。&lt;br&gt;
-https://xiaonaofua.github.io/toro/&lt;br&gt;
-&lt;br&gt;
-Todo：&lt;br&gt;
-手機版的對應&lt;br&gt;
-像素風水燈的外形改善&lt;br&gt;
-像素風水燈的近大遠小&lt;br&gt;
-水聲音效&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-技術棧如下：&lt;br&gt;
- HTML5 Canvas + JavaScript + Supabase + ...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;用Claude Code製作了如下這個像素風的放水燈的網站。
+https://xiaonaofua.github.io/toro/
+
+Todo：
+手機版的對應
+像素風水燈的外形改善
+像素風水燈的近大遠小
+水聲音效
+
+
+技術棧如下：
+ HTML5 Canvas +...</description>
             <pubDate>Wed, 06 Aug 2025 21:14:00 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</guid>
         </item>
 <item>
             <title>關於Claude Code | Claude Pro 第四天</title>
             <link>https://xiaonaofua.github.io/blog/posts/07.claude-code4.html</link>
-            <description>用Claude Code製作了如下可以把圖片轉換成ASCII字符的網站。&lt;br&gt;
-https://xiaonaofua.github.io/asciiArt/&lt;br&gt;
-&lt;br&gt;
-                                .....++...   .                                  &lt;br&gt;
-                          ...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;用Claude Code製作了如下可以把圖片轉換成ASCII字符的網站。
+https://xiaonaofua.github.io/asciiArt/
+
+                                .....++...   .        ...</description>
             <pubDate>Tue, 05 Aug 2025 22:27:05 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/07.claude-code4.html</guid>
         </item>
 <item>
             <title>關於Claude Code | Claude Pro 第三天</title>
             <link>https://xiaonaofua.github.io/blog/posts/06.claude-code3.html</link>
-            <description>在準備az-400的考試。微軟提供了50道練習題目。&lt;br&gt;
-https://learn.microsoft.com/zh-cn/credentials/certifications/exams/az-400/&lt;br&gt;
-點擊【进行免费的练习评估】即可。&lt;br&gt;
-https://learn.microsoft.com/zh-cn/credentials/certifications/exams/az...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;在準備az-400的考試。微軟提供了50道練習題目。
+https://learn.microsoft.com/zh-cn/credentials/certifications/exams/az-400/
+點擊【进行免费的练习评估】即可。
+https://lear...</description>
             <pubDate>Mon, 04 Aug 2025 22:29:56 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/06.claude-code3.html</guid>
         </item>
 <item>
             <title>關於Claude Code | Claude Pro 第二天</title>
             <link>https://xiaonaofua.github.io/blog/posts/05.claude-code2.html</link>
-            <description>兩個事；&lt;br&gt;
-&lt;br&gt;
-1&lt;br&gt;
-github發生了如下Action的錯誤，通過跟claude code對話，15分鐘以内就解決掉了。 &lt;br&gt;
-Deploy to GitHub Pages: All jobs have failed&lt;br&gt;
-&lt;br&gt;
-  Workflow permissions 設置可能是問題所在&lt;br&gt;
-  目前有兩個選項：&lt;br&gt;
-  - ✅ Read and wri...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;兩個事；
+
+1
+github發生了如下Action的錯誤，通過跟claude code對話，15分鐘以内就解決掉了。 
+Deploy to GitHub Pages: All jobs have failed
+
+  Workflow permissions 設置...</description>
             <pubDate>Sun, 03 Aug 2025 20:12:54 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/05.claude-code2.html</guid>
         </item>
@@ -118,22 +119,10 @@ Java 的誕生最初並非為了征服網際網路——它始於 Sun 微系統�
 <item>
             <title>關於Claude Code | Claude Pro 第一天</title>
             <link>https://xiaonaofua.github.io/blog/posts/03.claude-pro.html</link>
-            <description>今天訂閲了claude pro。花費是20美元一個月，約3千日元。試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。&lt;br&gt;
-在第一次執行每一步任務的時候，比如執行Python指令和git指令都會確認是否執行。很有安心感。&lt;br&gt;
-&lt;br&gt;
-另外也能通過對話讓claude code克隆OSS代碼，解釋如何使用OSS代碼。&lt;br&gt;
-&lt;br&gt;
---...</description>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;今天訂閲了claude pro。花費是20美元一個月，約3千日元。試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。
+在第一次執行每一步任務的時候，比如執行Python指令和git指令都會確認是否執行。很有安...</description>
             <pubDate>Sat, 02 Aug 2025 14:42:10 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/03.claude-pro.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | 第零天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/02.claude-code.html</link>
-            <description>計劃明天開始 用Claude Code編程一段時間試試。&lt;br&gt;
-每天編程1小時，在這裏寫感想...</description>
-            <pubDate>Thu, 31 Jul 2025 23:16:03 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/02.claude-code.html</guid>
         </item>
 
     </channel>
