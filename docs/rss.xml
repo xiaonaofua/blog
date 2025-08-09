@@ -5,8 +5,24 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Fri, 08 Aug 2025 23:40:52 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 09 Aug 2025 23:37:50 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第八天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</link>
+            <description>一）Windows上的Claudia.exe終於編譯成功了。試著用了一下，還沒有適應。&lt;br&gt;
+但，Token用量的顯示這個項目太好用了。顯示我這一周用的就已經快到60美元了。ClaudePro的每月是20美元，這樣看太超值了！&lt;br&gt;
+&lt;br&gt;
+---&lt;br&gt;
+Total Cost&lt;br&gt;
+$57.7998&lt;br&gt;
+&lt;br&gt;
+Total Tokens&lt;br&gt;
+102.79M&lt;br&gt;
+---&lt;br...</description>
+            <pubDate>Sat, 09 Aug 2025 23:31:31 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第七天</title>
             <link>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</link>
             <description>一）&lt;br&gt;
@@ -118,19 +134,6 @@ Java 的誕生最初並非為了征服網際網路——它始於 Sun 微系統�
 每天編程1小時，在這裏寫感想...</description>
             <pubDate>Thu, 31 Jul 2025 23:16:03 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/02.claude-code.html</guid>
-        </item>
-<item>
-            <title>寫新日志&amp;發佈的方法</title>
-            <link>https://xiaonaofua.github.io/blog/posts/01.blog-deployment-guide.html</link>
-            <description>第一行：標題，第二行：空白，第三行：內容&lt;br&gt;
-&lt;br&gt;
----&lt;br&gt;
-python build.py&lt;br&gt;
-git add .&lt;br&gt;
-git commit -m "new update"&lt;br&gt;
-git push origin main...</description>
-            <pubDate>Wed, 30 Jul 2025 00:07:12 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/01.blog-deployment-guide.html</guid>
         </item>
 
     </channel>

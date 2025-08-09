@@ -1,0 +1,15 @@
+關於Claude Code | Claude Pro 第八天
+
+一）Windows上的Claudia.exe終於編譯成功了。試著用了一下，還沒有適應。
+但，Token用量的顯示這個項目太好用了。顯示我這一周用的就已經快到60美元了。ClaudePro的每月是20美元，這樣看太超值了！
+
+---
+Total Cost
+$57.7998
+
+Total Tokens
+102.79M
+---
+
+二）計劃明天研究一下如何在ClaudeCode上使用Contex7。
+
