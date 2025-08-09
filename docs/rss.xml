@@ -5,15 +5,16 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 10 Aug 2025 07:34:35 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 10 Aug 2025 07:55:20 +0000</lastBuildDate>
         <item>
             <title>關於Claude Code | Claude Pro 第九天</title>
             <link>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;SuperClaude Windows 安裝總結
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+SuperClaude Windows 安裝總結
   1. pip install SuperClaude
   2. python -m SuperClaude install --quick
    - 安裝過程中會詢問幾個確認問題，按 y 確認即可
-   - ...</description>
+ ...</description>
             <pubDate>Sun, 10 Aug 2025 07:24:40 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</guid>
         </item>

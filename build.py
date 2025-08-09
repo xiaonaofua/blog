@@ -3,16 +3,31 @@ import json
 import shutil
 import re
 import hashlib
+import sys
+import argparse
 from datetime import datetime
 from xml.sax.saxutils import escape
 
 # --- Configuration ---
 CONTENT_DIR = 'content'
-TEMPLATE_DIR = 'templates'
+THEMES_DIR = 'themes'
 OUTPUT_DIR = 'docs'
 POSTS_DIR = os.path.join(OUTPUT_DIR, 'posts')
 CACHE_FILE = '.build_cache.json'
 POSTS_PER_PAGE = 10
+
+# Theme Configuration
+THEME_CONFIG = {
+    'pixel': {
+        'name': '像素風',
+        'description': '賽博朋克終端風格 - 黑色背景綠色文字'
+    },
+    'minimal': {
+        'name': '極簡風',
+        'description': '優雅現代極簡風格 - 白色背景優雅排版'
+    }
+}
+DEFAULT_THEME = 'pixel'
 
 # --- Helper Functions ---
 def read_file(path):
@@ -24,10 +39,98 @@ def write_file(path, content):
     with open(path, 'w', encoding='utf-8') as f:
         f.write(content)
 
-def copy_static_files():
-    static_dir = 'static'
-    if os.path.exists(static_dir):
-        shutil.copytree(static_dir, os.path.join(OUTPUT_DIR, 'static'), dirs_exist_ok=True)
+def get_available_themes():
+    """獲取可用主題列表"""
+    themes = []
+    if os.path.exists(THEMES_DIR):
+        for item in os.listdir(THEMES_DIR):
+            theme_path = os.path.join(THEMES_DIR, item)
+            if os.path.isdir(theme_path) and item in THEME_CONFIG:
+                themes.append(item)
+    return themes
+
+def validate_theme(theme_name):
+    """驗證主題完整性"""
+    if theme_name not in THEME_CONFIG:
+        return False
+    
+    theme_path = os.path.join(THEMES_DIR, theme_name)
+    required_files = [
+        os.path.join(theme_path, 'templates', 'base.html'),
+        os.path.join(theme_path, 'templates', 'post.html'),
+        os.path.join(theme_path, 'static', 'css', 'style.css')
+    ]
+    
+    return all(os.path.exists(f) for f in required_files)
+
+def select_theme_interactive():
+    """交互式主題選擇"""
+    available_themes = get_available_themes()
+    
+    if not available_themes:
+        print(f"Warning: No themes found, using default theme: {DEFAULT_THEME}")
+        return DEFAULT_THEME
+    
+    print("\n" + "="*50)
+    print("選擇博客主題")
+    print("="*50)
+    
+    for i, theme in enumerate(available_themes, 1):
+        config = THEME_CONFIG[theme]
+        print(f"{i}. {config['name']}")
+        print(f"   {config['description']}")
+        print()
+    
+    while True:
+        try:
+            choice = input(f"請選擇主題 (1-{len(available_themes)}) [預設: {DEFAULT_THEME}]: ").strip()
+            
+            if not choice:
+                return DEFAULT_THEME
+            
+            choice_num = int(choice)
+            if 1 <= choice_num <= len(available_themes):
+                selected_theme = available_themes[choice_num - 1]
+                if validate_theme(selected_theme):
+                    print(f"已選擇主題: {THEME_CONFIG[selected_theme]['name']}")
+                    return selected_theme
+                else:
+                    print(f"錯誤: 主題 {selected_theme} 檔案不完整!")
+            else:
+                print("錯誤: 請輸入有效的選項編號!")
+        except ValueError:
+            print("錯誤: 請輸入數字!")
+        except KeyboardInterrupt:
+            print(f"\n使用預設主題: {DEFAULT_THEME}")
+            return DEFAULT_THEME
+
+def copy_theme_static_files(theme_name):
+    """複製主題特定的靜態文件"""
+    theme_static_dir = os.path.join(THEMES_DIR, theme_name, 'static')
+    if os.path.exists(theme_static_dir):
+        shutil.copytree(theme_static_dir, os.path.join(OUTPUT_DIR, 'static'), dirs_exist_ok=True)
+        print(f"已複製 {theme_name} 主題靜態文件")
+    else:
+        print(f"Warning: Theme {theme_name} static files not found")
+
+def load_theme_templates(theme_name):
+    """載入指定主題的模板"""
+    theme_templates_dir = os.path.join(THEMES_DIR, theme_name, 'templates')
+    
+    base_template_path = os.path.join(theme_templates_dir, 'base.html')
+    post_template_path = os.path.join(theme_templates_dir, 'post.html')
+    
+    if not os.path.exists(base_template_path) or not os.path.exists(post_template_path):
+        print(f"Warning: Theme {theme_name} templates not found, using default")
+        # Fallback to default templates
+        base_template_path = os.path.join(THEMES_DIR, DEFAULT_THEME, 'templates', 'base.html')
+        post_template_path = os.path.join(THEMES_DIR, DEFAULT_THEME, 'templates', 'post.html')
+    
+    base_template = read_file(base_template_path)
+    post_template = read_file(post_template_path)
+    
+    print(f"已載入 {theme_name} 主題模板")
+    return base_template, post_template
 
 def get_file_hash(filepath):
     """Get MD5 hash of file for change detection."""
@@ -185,12 +288,39 @@ def main():
                     print(f"Warning: Could not remove {item_path}")
     os.makedirs(POSTS_DIR, exist_ok=True)
 
-    # Copy static files
-    copy_static_files()
+    # Determine theme to use
+    selected_theme = DEFAULT_THEME
+    
+    # Check for command line theme argument
+    if len(sys.argv) > 1:
+        for i, arg in enumerate(sys.argv):
+            if arg == '--theme' and i + 1 < len(sys.argv):
+                theme_arg = sys.argv[i + 1]
+                if validate_theme(theme_arg):
+                    selected_theme = theme_arg
+                    print(f"主題: 使用命令行指定主題: {THEME_CONFIG[selected_theme]['name']}")
+                else:
+                    print(f"錯誤: 指定的主題 '{theme_arg}' 無效或不完整")
+                break
+    
+    # Check for environment variable theme
+    env_theme = os.getenv('BLOG_THEME')
+    if env_theme and validate_theme(env_theme):
+        selected_theme = env_theme
+        print(f"主題: 使用環境變數指定主題: {THEME_CONFIG[selected_theme]['name']}")
+    
+    # Interactive theme selection if not specified
+    if selected_theme == DEFAULT_THEME and os.getenv('THEME_INTERACTIVE', '').lower() == 'true':
+        selected_theme = select_theme_interactive()
+    
+    print(f"主題: 當前使用主題: {THEME_CONFIG[selected_theme]['name']}")
+    print()
 
-    # Load templates
-    base_template = read_file(os.path.join(TEMPLATE_DIR, 'base.html'))
-    post_template = read_file(os.path.join(TEMPLATE_DIR, 'post.html'))
+    # Copy theme static files
+    copy_theme_static_files(selected_theme)
+
+    # Load theme templates
+    base_template, post_template = load_theme_templates(selected_theme)
 
     # Parse navigation from navi.txt
     navigation_items = parse_navigation_file()
