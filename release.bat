@@ -38,11 +38,6 @@ echo.
 echo Selected: !theme_name!
 echo.
 
-REM Wait for user confirmation
-echo Press any key to start building, or Ctrl+C to cancel...
-pause >nul
-
-echo.
 echo ===============================================
 echo Building static website...
 echo ===============================================
