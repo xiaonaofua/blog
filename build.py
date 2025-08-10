@@ -409,6 +409,13 @@ def main():
             post_slug = os.path.splitext(filename)[0]
             post_path = f'posts/{post_slug}.html' # Use relative path without leading ./
 
+            # Generate summary (first 140 characters)
+            # Remove HTML tags for summary generation
+            clean_content = re.sub(r'<[^>]+>', '', body)
+            summary = clean_content[:140].strip()
+            if len(clean_content) > 140:
+                summary += '...'
+
             post_info = {
                 'title': title,
                 'path': post_path,
@@ -417,6 +424,7 @@ def main():
                 'create_date': file_create_datetime.strftime('%Y-%m-%d %H:%M:%S'),  # Creation date display
                 'modify_date': file_modify_datetime.strftime('%Y-%m-%d %H:%M:%S'),   # Modification date display
                 'content': body,
+                'summary': summary,
                 'word_count': word_count,
                 'reading_time': reading_time
             }
@@ -473,7 +481,7 @@ def main():
         # Generate post list for this page
         index_list_items = ''
         for post in page_posts:
-            index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
+            index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-summary">{post["summary"]}</div><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
         
         post_list_html = f'<ul class="post-list">{index_list_items}</ul>'
         
@@ -510,7 +518,7 @@ def main():
         # Generate post list for this page
         posts_list_items = ''
         for post in page_posts:
-            posts_list_items += f'<li><a href="{post["path"].replace("posts/", "")}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
+            posts_list_items += f'<li><a href="{post["path"].replace("posts/", "")}">{post["title"]}</a><div class="post-summary">{post["summary"]}</div><div class="post-meta">創建: {post["create_date"]}</div></li>\n'
         
         post_list_html = f'<ul class="post-list">{posts_list_items}</ul>'
         

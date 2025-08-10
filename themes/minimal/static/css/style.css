@@ -168,6 +168,15 @@ footer a:hover {
     font-weight: 400;
 }
 
+.post-summary {
+    color: #3498db;
+    font-size: 14px;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    opacity: 0.8;
+    font-style: italic;
+}
+
 .post-content {
     background-color: #ffffff;
     padding: 2rem;
