@@ -231,17 +231,25 @@ footer a:hover {
     border-bottom: 2px solid #00ff41;
 }
 
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
 .post-list a {
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     transition: all 0.3s ease;
-    display: block;
-    margin-bottom: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0;
     margin-left: 8px;
     position: relative;
     padding: 5px 0;
+    flex: 1;
 }
 
 /* 移除文章列表的三角形符号 */
@@ -270,9 +278,9 @@ footer a:hover {
 .post-meta {
     color: #666;
     font-size: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     margin-left: 8px;
-    display: block;
+    display: inline-block;
 }
 
 .post-summary {

@@ -481,7 +481,7 @@ def main():
         # Generate post list for this page
         index_list_items = ''
         for post in page_posts:
-            index_list_items += f'<li><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div><div class="post-summary">{post["summary"]}</div></li>\n'
+            index_list_items += f'<li><div class="post-header"><a href="{post["path"]}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></div><div class="post-summary">{post["summary"]}</div></li>\n'
         
         post_list_html = f'<ul class="post-list">{index_list_items}</ul>'
         
@@ -518,7 +518,7 @@ def main():
         # Generate post list for this page
         posts_list_items = ''
         for post in page_posts:
-            posts_list_items += f'<li><a href="{post["path"].replace("posts/", "")}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div><div class="post-summary">{post["summary"]}</div></li>\n'
+            posts_list_items += f'<li><div class="post-header"><a href="{post["path"].replace("posts/", "")}">{post["title"]}</a><div class="post-meta">創建: {post["create_date"]}</div></div><div class="post-summary">{post["summary"]}</div></li>\n'
         
         post_list_html = f'<ul class="post-list">{posts_list_items}</ul>'
         
