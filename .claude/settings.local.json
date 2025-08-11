@@ -15,7 +15,8 @@
       "Bash(taskkill:*)",
       "Bash(del:*)",
       "Bash(mkdir:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(echo:*)"
     ],
     "deny": []
   }

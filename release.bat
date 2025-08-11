@@ -10,28 +10,31 @@ echo.
 REM Theme selection
 echo Select Blog Theme:
 echo.
-echo 1. Pixel Theme (Default) - Cyberpunk terminal style
-echo 2. Minimal Theme - Elegant modern minimal style  
+echo 1. Minimal Theme (Default) - Elegant modern minimal style
+echo 2. Pixel Theme - Cyberpunk terminal style  
 echo 3. Interactive Selection (choose during build)
 echo.
+echo Press 1, 2, or 3 to select theme (Default: 1 in 3 seconds)
 
-set /p theme_choice="Choose theme (1-3) [Default: 1]: "
+REM Wait for single keypress with timeout
+set theme_choice=1
+choice /c 123 /t 3 /d 1 /n >nul
+set theme_choice=%errorlevel%
 
 REM Process theme choice
-if "%theme_choice%"=="" set theme_choice=1
 if "%theme_choice%"=="1" (
-    set BLOG_THEME=pixel
-    set theme_name=Pixel Theme
-) else if "%theme_choice%"=="2" (
     set BLOG_THEME=minimal
     set theme_name=Minimal Theme
+) else if "%theme_choice%"=="2" (
+    set BLOG_THEME=pixel
+    set theme_name=Pixel Theme
 ) else if "%theme_choice%"=="3" (
     set THEME_INTERACTIVE=true
     set theme_name=Interactive Selection
 ) else (
     echo Invalid option, using default theme
-    set BLOG_THEME=pixel
-    set theme_name=Pixel Theme
+    set BLOG_THEME=minimal
+    set theme_name=Minimal Theme
 )
 
 echo.

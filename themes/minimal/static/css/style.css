@@ -168,6 +168,29 @@ footer a:hover {
     font-weight: 400;
 }
 
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.post-header h1 {
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.post-meta-inline {
+    color: #7f8c8d;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
 .post-summary {
     color: #3498db;
     font-size: 14px;

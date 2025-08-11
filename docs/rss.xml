@@ -5,18 +5,16 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Tue, 12 Aug 2025 00:20:25 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 12 Aug 2025 00:33:03 +0000</lastBuildDate>
         <item>
             <title>關於Claude Code | Claude Pro 第十天</title>
             <link>https://xiaonaofua.github.io/blog/posts/13.claude-code10.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;利用Cursor進行了如下博客模板的改動
+其中2Cursor沒有修改好，用ClaudeCode再次修改了一下才成功。
+感覺總體來説ClaudeCode還是更智能一些。
  1
  想修改模板成下面的樣子。 
- 修改前：把博客主頁的各個文章的摘要(文章的前140字符)顯示在標題下。
- 修改后：把博客主頁的各個文章的摘要(文章的前140字符)顯示在創建時間下。
- 
- 2
- 想修改模板成下面的樣...</description>
+ 修改前：把博客主頁的各個文章的摘要(文章的前140字符)...</description>
             <pubDate>Mon, 11 Aug 2025 18:04:52 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/13.claude-code10.html</guid>
         </item>
