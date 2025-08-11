@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 10 Aug 2025 21:04:57 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 11 Aug 2025 18:10:24 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/13.claude-code10.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）博客模板的改動
+Todo：
+ 修改前：把博客主頁的各個文章的摘要(文章的前140字符)顯示在標題下。
+ 修改后：把博客主頁的各個文章的摘要(文章的前140字符)顯示在創建時間下。&lt;/pre&gt;...</description>
+            <pubDate>Mon, 11 Aug 2025 18:04:52 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/13.claude-code10.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第九天</title>
             <link>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
@@ -116,14 +126,6 @@ Deploy to GitHub Pages: All jobs have failed
 Java 的誕生最初並非為了征服網際網路——它始於 Sun 微系統公司一個雄心勃勃的消費性電子產品項目，在恰當的時機轉向，成為歷史上最具影響力的程式語言之一。這個故事涵蓋了一個小而充滿熱情的團隊，從 1990 年到 1995 年致力於「Green 專案」，通過技術創新和戰略時機的完美結合，從嵌入式系統...</description>
             <pubDate>Sat, 02 Aug 2025 17:22:03 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/04.Java起源.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第一天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/03.claude-pro.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;今天訂閲了claude pro。花費是20美元一個月，約3千日元。試了一下，識別這個blog的代碼庫很快 而且很快給出了如下的概述,並創建了這個項目的CLAUDE.md。
-在第一次執行每一步任務的時候，比如執行Python指令和git指令都會確認是否執行。很有安...</description>
-            <pubDate>Sat, 02 Aug 2025 14:42:10 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/03.claude-pro.html</guid>
         </item>
 
     </channel>
