@@ -5,17 +5,39 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Tue, 12 Aug 2025 22:03:20 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 14 Aug 2025 22:52:42 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十三天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/16.claude-code13.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;為如下水燈2D版製作了2D/3D選擇的頁面和3D版，以及2D/3D切換功能。
+2D版添加了鼠標滾輪俯視角功能和拖拽移動畫布功能。
+
+https://xiaonaofua.github.io/toro/&lt;/pre&gt;...</description>
+            <pubDate>Thu, 14 Aug 2025 22:49:47 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/16.claude-code13.html</guid>
+        </item>
+<item>
+            <title>關於Claude Code | Claude Pro 第十二天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/15.claude-code12.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;通過Github Actions的設定，讓它可以5分鐘爲周期的用最新數據生成博客的html。
+
+npm run dev:admin
+管理面板：http://localhost:3000
+
+5分鐘後即可在下面URL查看
+https://xiaonaofua.git...</description>
+            <pubDate>Thu, 14 Aug 2025 22:44:49 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/15.claude-code12.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第十一天</title>
             <link>https://xiaonaofua.github.io/blog/posts/14.claude-code11.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;---
-  （一）
-  用ClaudeCode試著做了一個有在綫編寫文章功能的博客。有博客管理用界面，也有訪客可查看的主頁界面。
-  您的極簡個人博客系統已經完全搭建完成！以下是系統的完整概覽：
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+用ClaudeCode試著做了一個有在綫編寫文章功能的博客。有博客管理用界面，也有訪客可查看的主頁界面。
+您的極簡個人博客系統已經完全搭建完成！以下是系統的完整概覽：
 
-  ✅ 已完成的功能
-  1. ✅ 數據庫架構 - Supaba...</description>
+✅ 已完成的功能
+1. ✅ 數據庫架構 - Supabase PostgreSQL ...</description>
             <pubDate>Tue, 12 Aug 2025 06:41:38 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/14.claude-code11.html</guid>
         </item>
@@ -109,29 +131,6 @@ https://xiaonaofua.github.io/asciiArt/
                                 .....++...   .        ...</description>
             <pubDate>Tue, 05 Aug 2025 22:27:05 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/07.claude-code4.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第三天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/06.claude-code3.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;在準備az-400的考試。微軟提供了50道練習題目。
-https://learn.microsoft.com/zh-cn/credentials/certifications/exams/az-400/
-點擊【进行免费的练习评估】即可。
-https://lear...</description>
-            <pubDate>Mon, 04 Aug 2025 22:29:56 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/06.claude-code3.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第二天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/05.claude-code2.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;兩個事；
-
-1
-github發生了如下Action的錯誤，通過跟claude code對話，15分鐘以内就解決掉了。 
-Deploy to GitHub Pages: All jobs have failed
-
-  Workflow permissions 設置...</description>
-            <pubDate>Sun, 03 Aug 2025 20:12:54 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/05.claude-code2.html</guid>
         </item>
 
     </channel>

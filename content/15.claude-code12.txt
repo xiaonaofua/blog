@@ -1,0 +1,13 @@
+關於Claude Code | Claude Pro 第十二天
+
+通過Github Actions的設定，讓它可以5分鐘爲周期的用最新數據生成博客的html。
+
+npm run dev:admin
+管理面板：http://localhost:3000
+
+5分鐘後即可在下面URL查看
+https://xiaonaofua.github.io/blog2/
+ 
+git add .
+git commit -m "update"
+git push origin main
