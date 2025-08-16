@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 16 Aug 2025 06:39:31 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 16 Aug 2025 21:19:29 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十五天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/18.claude-code15.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;想做一個小兔几做月餅的月餅工廠的小游戲。用Kiro試了一下，通過下一步下一步做出來了，不像ClaudeCode做的那樣簡陋的，很多功能，游戲引擎都給編寫出來了。
+但是最重要的美工還是差强人意，角色的插圖和背景仍需要自己創作。
+
+用Claude的網頁版做了一個在W...</description>
+            <pubDate>Sat, 16 Aug 2025 21:12:18 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/18.claude-code15.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第十四天</title>
             <link>https://xiaonaofua.github.io/blog/posts/17.claude-code14.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;想做一個小兔几做月餅的月餅工廠的小游戲。昨天通過ClaudeCode做，做的網頁很簡單，和想象的差得很多。
@@ -112,24 +122,6 @@ https://xiaonaofua.github.io/toro/
 Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範 從數據 到代碼 都用一致的命名規則和大小寫規...</description>
             <pubDate>Thu, 07 Aug 2025 23:20:02 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第五天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;用Claude Code製作了如下這個像素風的放水燈的網站。
-https://xiaonaofua.github.io/toro/
-
-Todo：
-手機版的對應
-像素風水燈的外形改善
-像素風水燈的近大遠小
-水聲音效
-
-
-技術棧如下：
- HTML5 Canvas +...</description>
-            <pubDate>Wed, 06 Aug 2025 21:14:00 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/08.claude-code5.html</guid>
         </item>
 
     </channel>
