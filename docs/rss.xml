@@ -5,8 +5,20 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 16 Aug 2025 21:19:29 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 17 Aug 2025 20:47:35 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十六天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/19.claude-code16.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+昨天用Claude的網頁版做了一個在Windows系統中的AI協助冥想系統.exe的演示用的HTML。昨天最後用Kiro修改了一些幾乎完美了。
+今天沒有用網頁版Claude，而是用Claude Code指示了幾次即編輯成功了。
+
+（二）
+用OpenAI的...</description>
+            <pubDate>Sun, 17 Aug 2025 20:36:47 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/19.claude-code16.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第十五天</title>
             <link>https://xiaonaofua.github.io/blog/posts/18.claude-code15.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;想做一個小兔几做月餅的月餅工廠的小游戲。用Kiro試了一下，通過下一步下一步做出來了，不像ClaudeCode做的那樣簡陋的，很多功能，游戲引擎都給編寫出來了。
@@ -111,17 +123,6 @@ https://xiaonaofua.github.io/toro/
 ✅ 水平拖拽...</description>
             <pubDate>Fri, 08 Aug 2025 22:08:44 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第六天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;跟Claude Code交流了很久，才改了幾個bug。
-https://xiaonaofua.github.io/toro/
-
-心得：
-Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範 從數據 到代碼 都用一致的命名規則和大小寫規...</description>
-            <pubDate>Thu, 07 Aug 2025 23:20:02 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/09.claude-code6.html</guid>
         </item>
 
     </channel>
