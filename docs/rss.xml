@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 17 Aug 2025 20:47:35 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 18 Aug 2025 23:57:53 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十七天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/20.claude-code17.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;用Claude Code做了如下兩個網站。
+另外發現Claude Code分析代碼功能的能力很强，可以總結現在的項目寫出式樣書（MarkDown版本的），轉化成Word版即可很好的保留。
+（一）棒球基礎知識
+https://xiaonaofua.github.i...</description>
+            <pubDate>Mon, 18 Aug 2025 23:54:05 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/20.claude-code17.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第十六天</title>
             <link>https://xiaonaofua.github.io/blog/posts/19.claude-code16.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
@@ -107,22 +117,6 @@ Total Cost
 $57....</description>
             <pubDate>Sat, 09 Aug 2025 23:31:31 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第七天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;一）
-https://xiaonaofua.github.io/toro/
-對放水燈的應用增加了如下功能
-1⃣ 橫屏/竪屏適配
-✅ 自動檢測設備方向
-✅ 橫屏：完整展示山湖全景
-✅ 竪屏：世界視圖比屏幕更寬（16:10 比例）
-
-2⃣ 竪屏拖拽瀏覽
-✅ 水平拖拽...</description>
-            <pubDate>Fri, 08 Aug 2025 22:08:44 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</guid>
         </item>
 
     </channel>

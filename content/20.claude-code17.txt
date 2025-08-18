@@ -1,0 +1,9 @@
+關於Claude Code | Claude Pro 第十七天
+
+用Claude Code做了如下兩個網站。
+另外發現Claude Code分析代碼功能的能力很强，可以總結現在的項目寫出式樣書（MarkDown版本的），轉化成Word版即可很好的保留。
+（一）棒球基礎知識
+https://xiaonaofua.github.io/baseball/
+
+（二）讓大山裏的孩子走出大山
+https://xiaonaofua.github.io/edu/
