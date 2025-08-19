@@ -1,0 +1,14 @@
+關於Claude Code | Claude Pro 第十八天
+
+（一）
+用Claude Code做了如下網站。
+像素畫藝廊（可以在supabase的數據庫上設置網站訪問時需要的密碼，并且網頁上顯示的圖片都有第三方圖片托管網站托管，只留鏈接在網站裏）
+https://xiaonaofua.github.io/pixelArt/
+
+
+（二）
+用Claude網頁版解決了EKS版本過低所導致的Pods啓動失敗的問題。
+1 手動更新Image到Pods。
+2 通過修改Docker文件的内容，解決了Docker文件不適配CodeBuild的版本的問題。
+3 手動更新k8s的yaml，用來發佈最新的Image。
+

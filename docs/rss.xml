@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Mon, 18 Aug 2025 23:57:53 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 19 Aug 2025 23:54:54 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十八天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/21.claude-code18.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+用Claude Code做了如下網站。
+像素畫藝廊（可以在supabase的數據庫上設置網站訪問時需要的密碼，并且網頁上顯示的圖片都有第三方圖片托管網站托管，只留鏈接在網站裏）
+https://xiaonaofua.github.io/pixelArt/...</description>
+            <pubDate>Tue, 19 Aug 2025 23:32:33 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/21.claude-code18.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第十七天</title>
             <link>https://xiaonaofua.github.io/blog/posts/20.claude-code17.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;用Claude Code做了如下兩個網站。
@@ -105,18 +115,6 @@ SuperClaude Windows 安裝總結
  ...</description>
             <pubDate>Sun, 10 Aug 2025 07:24:40 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第八天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;一）Windows上的Claudia.exe終於編譯成功了。試著用了一下，還沒有適應。
-但，Token用量的顯示這個項目太好用了。顯示我這一周用的就已經快到60美元了。ClaudePro的每月是20美元，這樣看太超值了！
-
----
-Total Cost
-$57....</description>
-            <pubDate>Sat, 09 Aug 2025 23:31:31 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/11.claude-code8.html</guid>
         </item>
 
     </channel>
