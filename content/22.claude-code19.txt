@@ -1,0 +1,8 @@
+關於Claude Code | Claude Pro 第十九天
+
+（一）
+用Claude網頁版（Claude4.1）解決了EKS版本過低所導致的Pods不能更新的問題。結果，下面這個方法最好用。
+1 通過修改Docker文件的内容，解決了Docker文件不適配CodeBuild的版本的問題。
+2 ❌手動更新k8s的yaml，用來發佈最新的Image。
+  ✔使用k8s的set image命令手動設定最新的DockerImage到Pods。
+

@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Tue, 19 Aug 2025 23:54:54 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 20 Aug 2025 23:49:05 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第十九天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/22.claude-code19.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+用Claude網頁版（Claude4.1）解決了EKS版本過低所導致的Pods不能更新的問題。結果，下面這個方法最好用。
+1 通過修改Docker文件的内容，解決了Docker文件不適配CodeBuild的版本的問題。
+2 ❌手動更新k8s的yaml，用...</description>
+            <pubDate>Wed, 20 Aug 2025 23:43:36 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/22.claude-code19.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第十八天</title>
             <link>https://xiaonaofua.github.io/blog/posts/21.claude-code18.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
@@ -103,18 +113,6 @@ https://xiaonaofua.git...</description>
  修改前：把博客主頁的各個文章的摘要(文章的前140字符)...</description>
             <pubDate>Mon, 11 Aug 2025 18:04:52 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/13.claude-code10.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第九天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
-SuperClaude Windows 安裝總結
-  1. pip install SuperClaude
-  2. python -m SuperClaude install --quick
-   - 安裝過程中會詢問幾個確認問題，按 y 確認即可
- ...</description>
-            <pubDate>Sun, 10 Aug 2025 07:24:40 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/12.claude-code9.html</guid>
         </item>
 
     </channel>
