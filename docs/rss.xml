@@ -5,13 +5,16 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Thu, 21 Aug 2025 21:28:36 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 21 Aug 2025 22:47:54 +0000</lastBuildDate>
         <item>
             <title>關於Claude Code | Claude Pro 第二十天</title>
             <link>https://xiaonaofua.github.io/blog/posts/23.claude-code20.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
 計劃用ClaudeCode做一個關於離開東京的網站。
-通過Vercel+supabase+GitHubPage來實現的能夠互動的網站&lt;/pre&gt;...</description>
+通過Vercel+supabase+GitHubPage來實現的能夠互動的網站
+
+（二）
+明天開始實踐：用AI之前，先自己思考5分鐘，然後再敲擊鍵盤下指令。&lt;/pre&gt;...</description>
             <pubDate>Thu, 21 Aug 2025 21:24:22 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/23.claude-code20.html</guid>
         </item>
