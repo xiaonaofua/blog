@@ -1,0 +1,5 @@
+關於Claude Code | Claude Pro 第二十天
+
+（一）
+計劃用ClaudeCode做一個關於離開東京的網站。
+通過Vercel+supabase+GitHubPage來實現的能夠互動的網站
