@@ -5,8 +5,16 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 23 Aug 2025 00:06:22 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 24 Aug 2025 00:00:03 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第二十二天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/25.claude-code22.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+今天取消訂閲了ClaudeCode。預計在9月2日現在的這個月的訂閲到期。&lt;/pre&gt;...</description>
+            <pubDate>Sat, 23 Aug 2025 23:58:43 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/25.claude-code22.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第二十一天</title>
             <link>https://xiaonaofua.github.io/blog/posts/24.claude-code21.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
@@ -97,19 +105,6 @@ https://xiaonaofua.github.i...</description>
 https://xiaonaofua.github.io/toro/&lt;/pre&gt;...</description>
             <pubDate>Thu, 14 Aug 2025 22:49:47 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/16.claude-code13.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第十二天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/15.claude-code12.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;通過Github Actions的設定，讓它可以5分鐘爲周期的用最新數據生成博客的html。
-
-npm run dev:admin
-管理面板：http://localhost:3000
-
-5分鐘後即可在下面URL查看
-https://xiaonaofua.git...</description>
-            <pubDate>Thu, 14 Aug 2025 22:44:49 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/15.claude-code12.html</guid>
         </item>
 
     </channel>
