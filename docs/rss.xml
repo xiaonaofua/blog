@@ -5,8 +5,18 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 24 Aug 2025 00:00:03 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 30 Aug 2025 21:25:21 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第二十七天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/26.claude-code27.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
+9月2日現在的這個月的訂閲到期的時候，再重新想一下要不要訂閲ClaudeCode的一年份的。
+下面ClaudeCode總結的自己的定位的文章很厲害。參考了。
+https://claude.ai/public/artifacts/f9284178-ffc5...</description>
+            <pubDate>Sat, 30 Aug 2025 21:23:34 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/26.claude-code27.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第二十二天</title>
             <link>https://xiaonaofua.github.io/blog/posts/25.claude-code22.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
@@ -95,16 +105,6 @@ https://xiaonaofua.github.i...</description>
 結果還是不行，...</description>
             <pubDate>Fri, 15 Aug 2025 21:18:06 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/17.claude-code14.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第十三天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/16.claude-code13.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;為如下水燈2D版製作了2D/3D選擇的頁面和3D版，以及2D/3D切換功能。
-2D版添加了鼠標滾輪俯視角功能和拖拽移動畫布功能。
-
-https://xiaonaofua.github.io/toro/&lt;/pre&gt;...</description>
-            <pubDate>Thu, 14 Aug 2025 22:49:47 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/16.claude-code13.html</guid>
         </item>
 
     </channel>
