@@ -5,8 +5,16 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 30 Aug 2025 22:09:48 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 03 Sep 2025 23:58:39 +0000</lastBuildDate>
         <item>
+            <title>關於Claude Code | Claude Pro 第三十三天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/27.claude-code33.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;訂閲了ClaudeCode的一年份。
+希望每天多用ClaudeCode編編程。&lt;/pre&gt;...</description>
+            <pubDate>Wed, 03 Sep 2025 23:56:36 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/27.claude-code33.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第二十九天</title>
             <link>https://xiaonaofua.github.io/blog/posts/26.claude-code29.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
@@ -96,15 +104,6 @@ https://xiaonaofua.github.i...</description>
 用Claude的網頁版做了一個在W...</description>
             <pubDate>Sat, 16 Aug 2025 21:12:18 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/18.claude-code15.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第十四天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/17.claude-code14.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;想做一個小兔几做月餅的月餅工廠的小游戲。昨天通過ClaudeCode做，做的網頁很簡單，和想象的差得很多。
-今天用Claude的網頁版試了一下Claude4.0 opus和Claude4.1試著更新了一下，馬上就把單位時間内的Token數用光了。
-結果還是不行，...</description>
-            <pubDate>Fri, 15 Aug 2025 21:18:06 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/17.claude-code14.html</guid>
         </item>
 
     </channel>
