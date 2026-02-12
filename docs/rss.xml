@@ -5,8 +5,28 @@
         <link>https://xiaonaofua.github.io/blog</link>
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 07 Sep 2025 23:16:25 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 12 Feb 2026 22:49:04 +0000</lastBuildDate>
         <item>
+            <title>關於QWEN | 試用了兩天</title>
+            <link>https://xiaonaofua.github.io/blog/posts/28.QWEN.html</link>
+            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;試用了兩天，發現雖然能編程，但是是真慢呀。
+同樣的需求，用ClaudeCode試了一下發現QWEN來來回回溝通好幾個小時都還沒有搞定的要給一個HTML添加的新功能，
+用ClaudeCode不到十分鐘就搞定了。
+但是不得不説QWEN免費這一點確實是好，而且對代碼的...</description>
+            <pubDate>Thu, 12 Feb 2026 22:44:12 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/28.QWEN.html</guid>
+        </item>
+<item>
+            <title># Claude Code 使用日記總結</title>
+            <link>https://xiaonaofua.github.io/blog/posts/claude-code日記總結.html</link>
+            <description>| 序號 | 創建時間 | 標題 | 當天日記內容 |&lt;br&gt;
+|------|----------|------|--------------|&lt;br&gt;
+|  1 | 2025-07-31 | 關於Claude Code 第零天 | 計劃明天開始 用Claude Code編程一段時間試試。每天編程1小時，在這裏寫感想 |&lt;br&gt;
+|  2 | 2025-08-03 | 關於Claude Code...</description>
+            <pubDate>Sun, 05 Oct 2025 07:47:37 +0000</pubDate>
+            <guid>https://xiaonaofua.github.io/blog/posts/claude-code日記總結.html</guid>
+        </item>
+<item>
             <title>關於Claude Code | Claude Pro 第三十三天</title>
             <link>https://xiaonaofua.github.io/blog/posts/27.claude-code33.html</link>
             <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;訂閲了Claude Pro的一年份。相當於每天付費120～130日元，一杯咖啡不到的價錢。
@@ -82,28 +102,6 @@ https://xiaonaofua.github.io/pixelArt/...</description>
 https://xiaonaofua.github.i...</description>
             <pubDate>Mon, 18 Aug 2025 23:54:05 +0000</pubDate>
             <guid>https://xiaonaofua.github.io/blog/posts/20.claude-code17.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第十六天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/19.claude-code16.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;（一）
-昨天用Claude的網頁版做了一個在Windows系統中的AI協助冥想系統.exe的演示用的HTML。昨天最後用Kiro修改了一些幾乎完美了。
-今天沒有用網頁版Claude，而是用Claude Code指示了幾次即編輯成功了。
-
-（二）
-用OpenAI的...</description>
-            <pubDate>Sun, 17 Aug 2025 20:36:47 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/19.claude-code16.html</guid>
-        </item>
-<item>
-            <title>關於Claude Code | Claude Pro 第十五天</title>
-            <link>https://xiaonaofua.github.io/blog/posts/18.claude-code15.html</link>
-            <description>&lt;pre style="white-space: pre-wrap; font-family: inherit; margin: 0;"&gt;想做一個小兔几做月餅的月餅工廠的小游戲。用Kiro試了一下，通過下一步下一步做出來了，不像ClaudeCode做的那樣簡陋的，很多功能，游戲引擎都給編寫出來了。
-但是最重要的美工還是差强人意，角色的插圖和背景仍需要自己創作。
-
-用Claude的網頁版做了一個在W...</description>
-            <pubDate>Sat, 16 Aug 2025 21:12:18 +0000</pubDate>
-            <guid>https://xiaonaofua.github.io/blog/posts/18.claude-code15.html</guid>
         </item>
 
     </channel>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title># Claude Code 使用日記總結</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <meta name="description" content="優雅極簡的個人博客">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="blog-title">
+                <a href="https://xiaonaofua.github.io/blog/"><h1>小腦斧啊的博客</h1></a>
+            </div>
+            <div class="external-nav"><a href="https://xiaonaofua.github.io/wordList/" target="_blank" rel="noopener">詞彙學習(2025.06.17)</a><a href="https://xiaonaofua.github.io/aws-english" target="_blank" rel="noopener">AWS英語指南(2025.06.21)</a><a href="https://xiaonaofua.github.io/hao123/" target="_blank" rel="noopener">網址導航(2025.07.11)</a><a href="https://xiaonaofua.github.io/blog/" target="_blank" rel="noopener">blog(2025.07.20)</a><a href="https://xiaonaofua.github.io/exchangeRates/" target="_blank" rel="noopener">匯率轉換器(2025.07.31)</a><a href="https://xiaonaofua.github.io/az400/" target="_blank" rel="noopener">az400(2025.08.03)</a><a href="https://xiaonaofua.github.io/asciiArt/" target="_blank" rel="noopener">asciiArt(2025.08.05)</a><a href="https://xiaonaofua.github.io/toro/" target="_blank" rel="noopener">放水燈(2025.08.06)</a></div>
+        </nav>
+    </header>
+    <main>
+        <div class="post-header">
+    <h1># Claude Code 使用日記總結</h1>
+    <div class="post-meta-inline">2025-10-05 07:47:37</div>
+</div>
+<div class="post-content">
+    | 序號 | 創建時間 | 標題 | 當天日記內容 |<br>
+|------|----------|------|--------------|<br>
+|  1 | 2025-07-31 | 關於Claude Code 第零天 | 計劃明天開始 用Claude Code編程一段時間試試。每天編程1小時，在這裏寫感想 |<br>
+|  2 | 2025-08-03 | 關於Claude Code Claude Pro 第二天 | <strong>兩個事：</strong><br/>1. github發生了Action錯誤（Deploy to GitHub Pages: All jobs have failed），通過跟claude code對話，15分鐘以内就解決掉了。問題是Workflow permissions設置<br/>2. 在把博客變成像素風以後，想做如下更改，claude code的需求分析太厲害了。總結能力很强。需求包括：去掉文字和標題的重影效果、同時獲取文件的創建時間和修改時間、主頁按創建時間排序、文章詳細頁面顯示兩個時間 |<br>
+|  3 | 2025-08-04 | 關於Claude Code Claude Pro 第三天 | 在準備az-400的考試。微軟提供了50道練習題目。另外通過Claude Code在公共互聯網上找到了英語的習題，把它翻譯成中文，並做成網頁，發佈到GitHub上了。https://xiaonaofua.github.io/az400/ |<br>
+|  4 | 2025-08-05 | 關於Claude Code Claude Pro 第四天 | 用Claude Code製作了圖片轉換成ASCII字符的網站。https://xiaonaofua.github.io/asciiArt/ |<br>
+|  5 | 2025-08-06 | 關於Claude Code Claude Pro 第五天 | 用Claude Code製作了像素風的放水燈網站。https://xiaonaofua.github.io/toro/<br/><strong>技術棧：</strong> HTML5 Canvas + JavaScript + Supabase + GitHub Pages<br/><strong>心得：</strong> Claude Code也會有失誤，這次出現的失誤是superbase的表的列名大小寫與代碼的列名大小寫不一致，消耗了很多問題解決時間。Claude Code對Git的理解很厲害。現在製作每一個項目，都習慣讓它幫我寫一個一鍵部署的.bat文件 |<br>
+|  6 | 2025-08-07 | 關於Claude Code Claude Pro 第六天 | 跟Claude Code交流了很久，才改了幾個bug。https://xiaonaofua.github.io/toro/<br/><strong>心得：</strong> Claude Code對它掌握不到的數據沒有很清晰的記憶。所以最好制定好編碼規範，從數據到代碼都用一致的命名規則和大小寫規範就不易出錯了。Claude Code對任務的解讀和美感的視野很寬，知識積纍很多，比我個人要強 |<br>
+|  7 | 2025-08-08 | 關於Claude Code Claude Pro 第七天 | <strong>一）</strong> https://xiaonaofua.github.io/toro/ 對放水燈應用增加了橫屏/竪屏適配、竪屏拖拽瀏覽、多設備兼容等功能<br/><strong>二）</strong> 試著讓Claude Code幫我調整了Apache Http和Apache Tomcat的端口的Proxy設定。發現它對Apache的設定文件的理解很强<br/><strong>心得：</strong> 試著用Alt + m的調整模式來用Plan模式跟它交流了。只要能清晰的給Claude Code定義問題、描述現狀，它便能給出合理的建議<br/><strong>三）</strong> 編譯Windows exe的完整步驟記錄 |<br>
+|  8 | 2025-08-09 | 關於Claude Code Claude Pro 第八天 | <strong>一）</strong> Windows上的Claudia.exe終於編譯成功了。Token用量的顯示這個項目太好用了。顯示這一周用的就已經快到60美元了。ClaudePro的每月是20美元，這樣看太超值了！總成本：$57.7998，總Token：102.79M<br/><strong>二）</strong> 計劃明天研究一下如何在ClaudeCode上使用Contex7 |<br>
+|  9 | 2025-08-10 | 關於Claude Code Claude Pro 第九天 | <strong>（一）</strong> SuperClaude Windows安裝總結<br/><strong>（二）</strong> 在.bat中，用英文能避免很多中文編碼亂碼的問題<br/><strong>（三）</strong> 對博客的修改：1.修復HTML生成問題 2.實現主題系統（minimal和pixel兩個主題）3.部署更新<br/><strong>Todo：</strong> 給博客主頁添加摘要功能<br/><strong>（四）</strong> 嘗試了基於Github和supabase的wordpress，結果不行因為必須需要php環境。發現ClaudeCode一用Context7就容易上下文Token超出，要等下一個時間段的重置 |<br>
+| 10 | 2025-08-11 | 關於Claude Code Claude Pro 第十天 | 利用Cursor進行了博客模板的改動，其中第2項Cursor沒有修改好，用ClaudeCode再次修改才成功。感覺總體來説ClaudeCode還是更智能一些。修改內容：1.把文章摘要顯示在創建時間下 2.把創建時間與標題放在同一行 |<br>
+| 11 | 2025-08-12 | 關於Claude Code Claude Pro 第十一天 | <strong>（一）</strong> 用ClaudeCode做了一個有在綫編寫文章功能的博客。已完成功能：數據庫架構、身份驗證系統、在線管理面板（React + TypeScript）、富文本編輯器（TipTap）、圖片管理、靜態站點生成、極簡博客主題、自動化部署<br/><strong>（二）</strong> 即使用ClaudeCode有時候也會忘記讓它開啓Git管理。對source的Git管理一定要做，不然的話，悲劇都在後頭 |<br>
+| 12 | 2025-08-14 | 關於Claude Code Claude Pro 第十二天 | 通過Github Actions的設定，讓它可以5分鐘爲周期的用最新數據生成博客的html。管理面板：http://localhost:3000，5分鐘後可在 https://xiaonaofua.github.io/blog2/ 查看 |<br>
+| 13 | 2025-08-14 | 關於Claude Code Claude Pro 第十三天 | 為水燈2D版製作了2D/3D選擇的頁面和3D版，以及2D/3D切換功能。2D版添加了鼠標滾輪俯視角功能和拖拽移動畫布功能。https://xiaonaofua.github.io/toro/ |<br>
+| 14 | 2025-08-15 | 關於Claude Code Claude Pro 第十四天 | 想做一個小兔几做月餅的月餅工廠的小游戲。通過ClaudeCode做，做的網頁很簡單，和想象的差得很多。用Claude4.0 opus和Claude4.1試著更新，馬上就把Token數用光了。結果還是不行，逃不出基礎HTML網頁的樣式，學不會動圖的畫風。關鍵可能還在於Claude讀不會GIF和MP4（動圖和動畫） |<br>
+| 15 | 2025-08-16 | 關於Claude Code Claude Pro 第十五天 | 想做月餅工廠小游戲。用Kiro試了一下，通過下一步下一步做出來了，不像ClaudeCode做的那樣簡陋，很多功能、游戲引擎都給編寫出來了。但是最重要的美工還是差强人意，角色的插圖和背景仍需要自己創作。用Claude網頁版做了一個Windows系統中的AI協助冥想系統.exe的演示用HTML。功能組件完善花了一整天時間，前前後後改了40幾個版本，API次數限制也一再提醒。最終仍卡在一些細小的部件顯示錯誤上 |<br>
+| 16 | 2025-08-17 | 關於Claude Code Claude Pro 第十六天 | <strong>（一）</strong> 昨天做的AI協助冥想系統.exe的演示用HTML，昨天用Kiro修改了一些幾乎完美了。今天用Claude Code指示了幾次即編輯成功了<br/><strong>（二）</strong> 用OpenAI的Sora進行了文生圖的嘗試，圖片中人和物品的相對位置會有一些失誤。用Sora的圖和Chat GPT生成的劇本來用DomoAI生成了5秒短片 |<br>
+| 17 | 2025-08-18 | 關於Claude Code Claude Pro 第十七天 | 用Claude Code做了兩個網站：（一）棒球基礎知識 https://xiaonaofua.github.io/baseball/ （二）讓大山裏的孩子走出大山 https://xiaonaofua.github.io/edu/<br/>另外發現Claude Code分析代碼功能的能力很强，可以總結現在的項目寫出式樣書（MarkDown版本的），轉化成Word版即可很好的保留 |<br>
+| 18 | 2025-08-19 | 關於Claude Code Claude Pro 第十八天 | <strong>（一）</strong> 用Claude Code做了像素畫藝廊（可以在supabase的數據庫上設置網站訪問時需要的密碼，并且網頁上顯示的圖片都有第三方圖片托管網站托管，只留鏈接在網站裏）https://xiaonaofua.github.io/pixelArt/<br/><strong>（二）</strong> 用Claude網頁版解決了EKS版本過低所導致的Pods啓動失敗的問題：1.手動更新Image到Pods 2.通過修改Docker文件的内容，解決了Docker文件不適配CodeBuild的版本的問題 3.手動更新k8s的yaml，用來發佈最新的Image |<br>
+| 19 | 2025-08-20 | 關於Claude Code Claude Pro 第十九天 | <strong>（一）</strong> 用Claude網頁版（Claude4.1）解決了EKS版本過低所導致的Pods不能更新的問題。結果，下面這個方法最好用：1.通過修改Docker文件的内容，解決了Docker文件不適配CodeBuild的版本的問題 2.使用k8s的set image命令手動設定最新的DockerImage到Pods（而不是手動更新k8s的yaml） |<br>
+| 20 | 2025-08-21 | 關於Claude Code Claude Pro 第二十天 | <strong>（一）</strong> 計劃用ClaudeCode做一個關於離開東京的網站。通過Vercel+supabase+GitHubPage來實現的能夠互動的網站<br/><strong>（二）</strong> 明天開始實踐：用AI之前，先自己思考5分鐘，然後再敲擊鍵盤下指令 |<br>
+| 21 | 2025-08-23 | 關於Claude Code Claude Pro 第二十一天 | <strong>（一）</strong> 今天試著用ClaudeCode之前，先自己思考了五分鐘，然後再輸入指令。果然給的結果很貼切，一次完成了修改 |<br>
+| 22 | 2025-08-23 | 關於Claude Code Claude Pro 第二十二天 | <strong>（一）</strong> 今天取消訂閲了ClaudeCode。預計在9月2日現在的這個月的訂閲到期 |<br>
+| 23 | 2025-08-30 | 關於Claude Code Claude Pro 第二十九天 | <strong>（一）</strong> 9月2日訂閲到期的時候，再重新想一下要不要訂閲ClaudeCode的一年份的。ClaudeCode總結的自己的定位的文章很厲害。參考了。https://claude.ai/public/artifacts/f9284178-ffc5-4f0f-86f1-fbc7579ed645 |<br>
+| 24 | 2025-09-03 | 關於Claude Code Claude Pro 第三十三天 | 訂閲了Claude Pro的一年份。相當於每天付費120～130日元，一杯咖啡不到的價錢。希望每天多用ClaudeCode編編程 |<br>
+<br>
+<h2>統計信息</h2><br>
+<br>
+- <strong>總天數：</strong> 24天<br>
+- <strong>時間跨度：</strong> 2025年7月31日 - 2025年9月3日<br>
+- <strong>主要成果：</strong><br>
+  - 創建了多個網站項目（放水燈、ASCII藝術、像素畫藝廊、棒球知識、教育網站等）<br>
+  - 解決了多個技術問題（GitHub Actions、Apache配置、EKS部署等）<br>
+  - 學習了多種技術棧（React、TypeScript、Supabase、GitHub Pages等）<br>
+  - Token使用量達到102.79M（約$57.80）<br>
+<br>
+<h2>使用心得總結</h2><br>
+<br>
+1. <strong>優點：</strong><br>
+   - 需求分析和總結能力很强<br>
+   - Git理解能力厲害<br>
+   - 代碼分析功能強大<br>
+   - 對配置文件理解深刻<br>
+<br>
+2. <strong>注意事項：</strong><br>
+   - 對掌握不到的數據記憶不清晰，需要統一命名規範<br>
+   - 使用Context7容易超出Token限制<br>
+   - 最好先思考5分鐘再下指令，效果更好<br>
+   - 必須開啟Git管理，避免代碼丟失<br>
+<br>
+3. <strong>價值評估：</strong><br>
+   - 每月20美元訂閱費用<br>
+   - 實際使用價值約60美元/週<br>
+   - 年費相當於每天120-130日元（一杯咖啡的價格）<div class="post-navigation"><div class="nav-previous"><a href="../posts/28.QWEN.html">← 上一篇: 關於QWEN | 試用了兩天</a></div><div class="nav-next"><a href="../posts/27.claude-code33.html">下一篇: 關於Claude Code | Claude Pro 第三十三天 →</a></div></div>
+</div>
+    </main>
+    <footer>
+        <p>&copy; 2025 <a href="https://xiaonaofua.github.io/blog/">小腦斧啊的博客</a></p>
+    </footer>
+
+</body>
+</html>

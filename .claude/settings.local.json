@@ -17,7 +17,8 @@
       "Bash(mkdir:*)",
       "Bash(cp:*)",
       "Bash(echo:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(powershell:*)"
     ],
     "deny": []
   }
