@@ -6,8 +6,32 @@
         <description>Simple and elegant blog</description>
         <language>zh-CN</language>
         <copyright>Copyright 2026 xiaonaofua</copyright>
-        <lastBuildDate>Fri, 13 Feb 2026 21:31:38 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 13 Feb 2026 22:02:10 +0000</lastBuildDate>
         <docs>http://www.rssboard.org/rss-specification</docs>
+    <item>
+        <title>關於未來軟件工程師所需技能 | 如果写代码可能会像以前学会打字一样变得容易</title>
+        <link>https://xiaonaofua.github.io/blog/posts/29.未來的系統工程師.html</link>
+        <guid>https://xiaonaofua.github.io/blog/posts/29.未來的系統工程師.html</guid>
+        <description>刚才听了一个黄仁勋的对谈，他提到写代码可能会像以前学会打字一样变得容易。在这种背景下，作为一个软件工程师，未来应该具备什么样的技能呢？我稍微思考了一下，主要有以下几点：
+
+1. 跨界思考与深度思考的能力
+   不仅要有跨界思考的能力，还要比 AI 思考得更深。
+
+2. 定义问题的能力
+   这是核心能力之一，要能够准确地定义问题。
+
+3. 了解 AI 的边界
+   要清楚 AI 的局限性在哪里，知道它在哪些地方会出错，以及它推理机制的局限是什么。
+
+4. 抽象思考能力
+   从个人能力提升的角度来看，需要具备更强的抽象思考能力。
+
+5. 清晰的表达能力
+   要练习自己的表达，学会清晰地传达指</description>
+        <pubDate>Fri, 13 Feb 2026 22:00:42 +0000</pubDate>
+        <author>xiaonaofua</author>
+        <category>未分類</category>
+    </item>
     <item>
         <title>關於QWEN | 試用了兩天</title>
         <link>https://xiaonaofua.github.io/blog/posts/28.QWEN.html</link>
@@ -288,36 +312,6 @@ Total Tokens
 
 二）計劃明天研究一下如何在ClaudeCode上使用Contex7。</description>
         <pubDate>Sat, 09 Aug 2025 23:31:31 +0000</pubDate>
-        <author>xiaonaofua</author>
-        <category>未分類</category>
-    </item>
-    <item>
-        <title>關於Claude Code | Claude Pro 第七天</title>
-        <link>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</link>
-        <guid>https://xiaonaofua.github.io/blog/posts/10.claude-code7.html</guid>
-        <description>一）
-https://xiaonaofua.github.io/toro/
-對放水燈的應用增加了如下功能
-1⃣ 橫屏/竪屏適配
-✅ 自動檢測設備方向
-✅ 橫屏：完整展示山湖全景
-✅ 竪屏：世界視圖比屏幕更寬（16:10 比例）
-
-2⃣ 竪屏拖拽瀏覽
-✅ 水平拖拽查看完整橫屏內容
-✅ 平滑拖拽體驗和邊界限制
-✅ 實時滾動條位置指示器
-✅ 拖拽提示：← 拖拽查看完整景色 →
-
-3⃣ 多設備兼容
-✅ iPad/iPhone: 觸摸拖拽
-✅ Mac/PC: 鼠標拖拽
-✅ Chrome/Safari: 完整支持
-✅ 智能光標管理（grab/grabbing/crosshair）
-
-二）
-另外，今天試著讓</description>
-        <pubDate>Fri, 08 Aug 2025 22:08:44 +0000</pubDate>
         <author>xiaonaofua</author>
         <category>未分類</category>
     </item>
