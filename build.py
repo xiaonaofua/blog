@@ -398,15 +398,18 @@ def main():
             file_modify_datetime = datetime.fromtimestamp(file_mtime)
 
             yaml_metadata, body_content = extract_yaml_frontmatter(content_raw)
-            
+
             lines = body_content.strip().split('\n')
-            title = yaml_metadata.get('title', 'Untitled')
-            
+            title = yaml_metadata.get('title')
+
             if not title and lines:
                 title = lines[0].strip()
                 body = '\n'.join(lines[1:]).strip()
             else:
                 body = body_content.strip()
+
+            if not title:
+                title = 'Untitled'
             
             if is_markdown:
                 body = markdown_to_html(body)
@@ -567,10 +570,10 @@ def main():
     
     save_cache(current_cache)
     
-    print(f"✅ Build successful! {len(posts_metadata)} posts generated.")
-    print(f"📁 Site generated in: {OUTPUT_DIR}/")
-    print(f"📡 RSS feed generated: {OUTPUT_DIR}/rss.xml")
-    print(f"🗺️  Sitemap generated: {OUTPUT_DIR}/sitemap.xml")
+    print(f"Build successful! {len(posts_metadata)} posts generated.")
+    print(f"Site generated in: {OUTPUT_DIR}/")
+    print(f"RSS feed generated: {OUTPUT_DIR}/rss.xml")
+    print(f"Sitemap generated: {OUTPUT_DIR}/sitemap.xml")
 
 if __name__ == '__main__':
     main()
